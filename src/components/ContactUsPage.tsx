@@ -73,7 +73,6 @@ export function ContactUsPage() {
       icon: Instagram,
       name: "Instagram",
       handle: "@seoulcha",
-      followers: "125K followers",
       url: "https://instagram.com/seoulcha",
       color: "from-pink-500 to-purple-500"
     },
@@ -81,7 +80,6 @@ export function ContactUsPage() {
       icon: Facebook,
       name: "Facebook",
       handle: "Seoul Cha Official",
-      followers: "89K likes",
       url: "https://facebook.com/seoulcha",
       color: "from-blue-500 to-blue-600"
     },
@@ -89,7 +87,6 @@ export function ContactUsPage() {
       icon: Twitter,
       name: "Twitter",
       handle: "@SeoulChaOfficial",
-      followers: "45K followers",
       url: "https://twitter.com/seoulcha",
       color: "from-sky-400 to-sky-600"
     },
@@ -103,32 +100,32 @@ export function ContactUsPage() {
     }
   ];
 
-  const locations = [
-    {
-      name: "Seoul Flagship - Hongdae",
-      address: "123 Hongdae Street, Mapo-gu, Seoul",
-      phone: "+82-2-1234-5678",
-      status: "Open Now"
-    },
-    {
-      name: "Seoul Branch - Gangnam",
-      address: "456 Gangnam-daero, Gangnam-gu, Seoul",
-      phone: "+82-2-2345-6789",
-      status: "Open Now"
-    },
-    {
-      name: "Seoul Branch - Myeongdong",
-      address: "789 Myeongdong-gil, Jung-gu, Seoul",
-      phone: "+82-2-3456-7890",
-      status: "Open Now"
-    },
-    {
-      name: "Busan Branch - Haeundae",
-      address: "321 Haeundae-ro, Haeundae-gu, Busan",
-      phone: "+82-51-1234-5678",
-      status: "Opening Soon"
-    }
-  ];
+  // const locations = [
+  //   {
+  //     name: "Seoul Flagship - Hongdae",
+  //     address: "123 Hongdae Street, Mapo-gu, Seoul",
+  //     phone: "+82-2-1234-5678",
+  //     status: "Open Now"
+  //   },
+  //   {
+  //     name: "Seoul Branch - Gangnam",
+  //     address: "456 Gangnam-daero, Gangnam-gu, Seoul",
+  //     phone: "+82-2-2345-6789",
+  //     status: "Open Now"
+  //   },
+  //   {
+  //     name: "Seoul Branch - Myeongdong",
+  //     address: "789 Myeongdong-gil, Jung-gu, Seoul",
+  //     phone: "+82-2-3456-7890",
+  //     status: "Open Now"
+  //   },
+  //   {
+  //     name: "Busan Branch - Haeundae",
+  //     address: "321 Haeundae-ro, Haeundae-gu, Busan",
+  //     phone: "+82-51-1234-5678",
+  //     status: "Opening Soon"
+  //   }
+  // ];
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "+821234567890";
