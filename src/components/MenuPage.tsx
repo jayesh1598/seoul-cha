@@ -221,17 +221,6 @@ export function MenuPage() {
     }
   ];
 
-  const toppings = [
-    { name: "Classic Tapioca Pearls", price: "₹20" },
-    { name: "Popping Boba (Various Flavors)", price: "₹25" },
-    { name: "Grass Jelly", price: "₹15" },
-    { name: "Red Bean", price: "₹20" },
-    { name: "Coconut Jelly", price: "₹20" },
-    { name: "Pudding", price: "₹25" },
-    { name: "Extra Shot Espresso", price: "₹30" },
-    { name: "Whipped Cream", price: "₹15" }
-  ];
-
   return (
     <div className="min-h-screen pt-20 pb-16">
       {/* Header */}
