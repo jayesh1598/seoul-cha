@@ -32,12 +32,12 @@ export function ContactUsPage() {
     },
     {
       icon: Phone,
-      title: "Call Us",
-      details: [
-        "Korea: +82-2-1234-5678",
-        "International: +1-555-SEOUL-CHA",
-        "Franchise Hotline: +82-2-9876-5432"
-      ],
+      // title: "Call Us",
+      // details: [
+      //   "Korea: +82-2-1234-5678",
+      //   "International: +1-555-SEOUL-CHA",
+      //   "Franchise Hotline: +82-2-9876-5432"
+      // ],
       action: {
         label: "Call Now",
         onClick: () => window.open('tel:+821234567890', '_blank')
