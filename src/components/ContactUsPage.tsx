@@ -1,12 +1,11 @@
 import { EnquiryForm } from "./EnquiryForm";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
-import { EnquiryForm } from "./EnquiryForm";
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   MessageCircle,
   Instagram,
   Facebook,
