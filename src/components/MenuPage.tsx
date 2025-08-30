@@ -6,108 +6,230 @@ import { Star, Leaf, Coffee, Heart } from "lucide-react";
 export function MenuPage() {
   const menuCategories = [
     {
-      title: "Signature Seoul Cha",
+      title: "Bubble Tea Series [Classic Milk]",
       items: [
         {
-          name: "Seoul Rose Milk Tea",
-          description: "Our signature blend with rose petals and creamy milk",
-          price: "₩5,500",
-          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Popular", "New"],
-          rating: 4.9
-        },
-        {
-          name: "K-Pop Purple Taro",
-          description: "Vibrant taro bubble tea with chewy pearls",
-          price: "₩5,200",
+          name: "Taro Bubble Tea",
+          description: "Is a creamy, dreamy blend of sweet, nutty taro root and chewy black pearls",
+          price: "₹199",
           image: "https://images.unsplash.com/photo-1681325655248-fddbd7921715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXJvJTIwYnViYmxlJTIwdGVhJTIwcHVycGxlfGVufDF8fHx8MTc1NTMyMDA4Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Instagram Hit"],
+          badges: ["Popular"],
           rating: 4.8
         },
         {
-          name: "Matcha Cream Boba",
-          description: "Premium Japanese matcha with fresh cream and boba pearls",
-          price: "₩6,000",
+          name: "Matcha Bubble Tea",
+          description: "Is a smooth and earthy blend of premium green tea matcha and creamy milk",
+          price: "₹199",
           image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
           badges: ["Premium"],
           rating: 4.9
-        }
-      ]
-    },
-    {
-      title: "Fruit Tea Collection",
-      items: [
+        },
         {
-          name: "Strawberry Milk Tea",
-          description: "Fresh strawberry puree with creamy milk tea",
-          price: "₩5,000",
+          name: "Thai Bubble Tea",
+          description: "Is a bold and creamy blend of strong black tea, sweet spices and milk",
+          price: "₹199",
           image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Sweet"],
+          badges: ["Spicy"],
           rating: 4.7
         },
         {
-          name: "Mango Yakult Tea",
-          description: "Tropical mango with refreshing Yakult probiotic drink",
-          price: "₩5,300",
+          name: "Brown Sugar Bubble Tea",
+          description: "Is a rich and velvety beverage featuring caramelized brown sugar syrup swirled into creamy milk",
+          price: "₹199",
           image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Healthy", "Refreshing"],
+          badges: ["Signature", "Sweet"],
+          rating: 4.9
+        },
+        {
+          name: "Hongkong Bubble Tea",
+          description: "Is a bold and silky blend of strong black tea and evaporated milk",
+          price: "₹199",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Classic"],
           rating: 4.6
         },
         {
-          name: "Lemon Honey Jasmine",
-          description: "Zesty lemon with honey and fragrant jasmine tea",
-          price: "₩4,800",
+          name: "Mango Bubble Tea",
+          description: "Tropical delight, blending the juicy sweetness of ripe mangoes with creamy milk",
+          price: "₹199",
           image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Caffeine Free"],
-          rating: 4.5
-        }
-      ]
-    },
-    {
-      title: "Korean Coffee Series",
-      items: [
-        {
-          name: "Dalgona Coffee Bubble",
-          description: "Viral Korean whipped coffee with boba pearls",
-          price: "₩5,800",
-          image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Trending", "Strong"],
+          badges: ["Tropical"],
           rating: 4.8
         },
         {
-          name: "Seoul Latte Boba",
-          description: "Smooth espresso with steamed milk and chewy boba",
-          price: "₩5,500",
+          name: "Blueberry Bubble Tea",
+          description: "A vibrant mix of sweet, tangy blueberry flavor and creamy milk, paired with chewy pearls",
+          price: "₹199",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Antioxidant"],
+          rating: 4.7
+        },
+        {
+          name: "Strawberry Bubble Tea",
+          description: "Is a sweet and creamy blend of ripe strawberry flavor and smooth milk",
+          price: "₹199",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Sweet"],
+          rating: 4.8
+        },
+        {
+          name: "Dragon Fruit Raspberry Bubble Tea",
+          description: "Is a vibrant and refreshing blend of exotic dragon fruit and tangy raspberries",
+          price: "₹199",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Exotic", "Refreshing"],
+          rating: 4.6
+        }
+      ]
+    },
+    {
+      title: "Coffee Lovers Series",
+      items: [
+        {
+          name: "Vanilla Bean Coffee",
+          description: "The vanilla bean Coffee bubble tea blends the smooth, mellow flavor of vanilla with rich coffee",
+          price: "₹210",
           image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Classic"],
+          badges: ["Smooth"],
+          rating: 4.7
+        },
+        {
+          name: "Caramel Coffee",
+          description: "The caramel coffee bubble tea blends the bold, roasted flavor of coffee with sweet caramel",
+          price: "₹210",
+          image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Sweet", "Bold"],
+          rating: 4.8
+        },
+        {
+          name: "Vietnamese Coffee",
+          description: "[Veg preparation] The vietnamese coffee bubble tea delivers a bold and intense coffee experience",
+          price: "₹210",
+          image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Veg", "Intense"],
+          rating: 4.9
+        },
+        {
+          name: "Classic Cold Coffee",
+          description: "[Veg preparation] The classic cold coffee bubble tea blends the bold, smooth taste of coffee",
+          price: "₹210",
+          image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Veg", "Classic"],
+          rating: 4.6
+        }
+      ]
+    },
+    {
+      title: "Fruits Tea Series",
+      items: [
+        {
+          name: "Mango Fruit Tea",
+          description: "[Veg preparation] Is a tropical delight, blending the sweet, juicy flavor of ripe mangoes",
+          price: "₹160",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Veg", "Tropical"],
+          rating: 4.8
+        },
+        {
+          name: "Lemon Fruit Tea",
+          description: "[Veg preparation] Is a zesty, refreshing mix of tangy lemon soda and citrusy flavors",
+          price: "₹160",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Veg", "Zesty"],
+          rating: 4.6
+        },
+        {
+          name: "Strawberry Fruit Tea",
+          description: "[Veg preparation] Is a bubbly, berry filled delight, combining sweet and tangy strawberry flavors",
+          price: "₹160",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Veg", "Berry"],
           rating: 4.7
         }
       ]
     },
     {
-      title: "Seasonal Specials",
+      title: "Korean Corn Dog",
       items: [
         {
-          name: "Winter Warming Chai",
-          description: "Spiced chai with warm winter flavors and boba",
-          price: "₩5,400",
-          image: "https://images.unsplash.com/photo-1638978127697-e4d55e88a6e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGdyZWVuJTIwdGVhfGVufDF8fHx8MTc1NTMyMDA4M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-          badges: ["Limited Time", "Warming"],
-          rating: 4.6
+          name: "Mozzarella Corn Dog",
+          description: "Is crispy on the outside with a golden, crunchy batter and filled with melted mozzarella cheese",
+          price: "₹199",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Crispy", "Cheesy"],
+          rating: 4.8
+        },
+        {
+          name: "Paneer Corn Dog",
+          description: "[Veg preparation] Crunchy, golden crust with a soft, spiced paneer filling, offers authentic Korean flavors",
+          price: "₹320",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Veg", "Premium"],
+          rating: 4.7
+        }
+      ]
+    },
+    {
+      title: "Korean Ramyeon",
+      items: [
+        {
+          name: "Chilli Garlic Ramyeon",
+          description: "Is a bold and flavorful noodle dish with a spicy kick of red chili and aromatic garlic",
+          price: "₹420",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Spicy", "Bold"],
+          rating: 4.8
+        },
+        {
+          name: "Spicy Udon Ramyeon",
+          description: "Features thick, chewy udon noodles in a bold, fiery broth infused with rich Korean spices",
+          price: "₹420",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Udon", "Fiery"],
+          rating: 4.9
+        },
+        {
+          name: "Stir Fried Ramyeon",
+          description: "Is a flavorful fusion dish with thick, chewy noodles tossed in a savoury stir-fry sauce",
+          price: "₹420",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Fusion", "Savoury"],
+          rating: 4.7
+        },
+        {
+          name: "Creamy Peanut Miso Ramyeon",
+          description: "Is a rich, umami packed noodle dish with a smooth blend of nutty peanut and savory miso",
+          price: "₹560",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Premium", "Umami"],
+          rating: 4.9
+        }
+      ]
+    },
+    {
+      title: "Soups Dumplings",
+      items: [
+        {
+          name: "Creamy Peanut Miso Ramen Dumplings",
+          description: "Savoury dumplings tossed in a rich, velvety peanut miso sauce nutty, umami packed flavors",
+          price: "₹560",
+          image: "https://images.unsplash.com/photo-1671659420749-d56efede6df4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHgtOGY4ZXI3ajR8ZW58MXx8fHwxNzU1MzIwMDgwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+          badges: ["Premium", "Dumplings"],
+          rating: 4.8
         }
       ]
     }
   ];
 
   const toppings = [
-    { name: "Classic Tapioca Pearls", price: "₩500" },
-    { name: "Popping Boba (Various Flavors)", price: "₩600" },
-    { name: "Grass Jelly", price: "₩400" },
-    { name: "Red Bean", price: "₩500" },
-    { name: "Coconut Jelly", price: "₩500" },
-    { name: "Pudding", price: "₩600" },
-    { name: "Extra Shot Espresso", price: "₩800" },
-    { name: "Whipped Cream", price: "₩300" }
+    { name: "Classic Tapioca Pearls", price: "₹20" },
+    { name: "Popping Boba (Various Flavors)", price: "₹25" },
+    { name: "Grass Jelly", price: "₹15" },
+    { name: "Red Bean", price: "₹20" },
+    { name: "Coconut Jelly", price: "₹20" },
+    { name: "Pudding", price: "₹25" },
+    { name: "Extra Shot Espresso", price: "₹30" },
+    { name: "Whipped Cream", price: "₹15" }
   ];
 
   return (
@@ -154,9 +276,11 @@ export function MenuPage() {
                           key={badgeIndex} 
                           className={`text-xs ${
                             badge === 'Popular' ? 'bg-red-500 text-white' :
-                            badge === 'New' ? 'bg-green-500 text-white' :
                             badge === 'Premium' ? 'bg-purple-500 text-white' :
-                            badge === 'Instagram Hit' ? 'bg-pink-500 text-white' :
+                            badge === 'Signature' ? 'bg-pink-500 text-white' :
+                            badge === 'Veg' ? 'bg-green-500 text-white' :
+                            badge === 'Spicy' ? 'bg-orange-500 text-white' :
+                            badge === 'Sweet' ? 'bg-yellow-500 text-black' :
                             'bg-blue-500 text-white'
                           }`}
                         >
@@ -216,8 +340,14 @@ export function MenuPage() {
           </div>
         </div>
 
+        {/* FSSAI License */}
+        <div className="mt-16 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-6">
+          <h3 className="text-lg mb-2 text-gray-800">FSSAI Licensed</h3>
+          <p className="text-gray-600">Lic. No. 20725032000540</p>
+        </div>
+
         {/* Customization Notice */}
-        <div className="mt-16 text-center bg-gradient-to-r from-pink-100 to-purple-100 rounded-3xl p-8">
+        <div className="mt-8 text-center bg-gradient-to-r from-pink-100 to-purple-100 rounded-3xl p-8">
           <Heart className="mx-auto mb-4 text-pink-500" size={48} />
           <h3 className="korean-handwritten text-2xl mb-4 text-purple-800">
             Make It Yours!

@@ -43,10 +43,12 @@ export function Footer() {
 
             <div className="space-y-2 text-sm">
               <p className="text-white/80">
-                📍 123 K-Town Plaza
+                FOOD CASTLE,
+                Vasna - Bhayli Main Road, Behind Nayara Petrol Pump,
+               
               </p>
               <p className="text-white/80">
-                Los Angeles, CA 90010
+                Bhayli, Vadodara(Gujarat) 391410
               </p>
               <p className="text-white/80">
                 ☎️ (213) SEOUL-CHA
@@ -93,47 +95,10 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Customer Care */}
-          <div className="space-y-4">
-            <h4 className="text-white text-lg mb-4">
-              💜 Customer Care
-            </h4>
-            <div className="space-y-2">
-              <a
-                href="#faq"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                FAQ
-              </a>
-              <a
-                href="#allergies"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Allergen Information
-              </a>
-              <a
-                href="#nutrition"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Nutrition Facts
-              </a>
-              <a
-                href="#feedback"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Customer Feedback
-              </a>
-              <a
-                href="#rewards"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Loyalty Program
-              </a>
-            </div>
-          </div>
+          
 
           {/* Connect With Us */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             <h4 className="text-white text-lg mb-4">
               📱 Connect With Us
             </h4>
@@ -152,23 +117,12 @@ export function Footer() {
               >
                 📘
               </a>
-              <a
-                href="#tiktok"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-              >
-                🎵
-              </a>
-              <a
-                href="#youtube"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-              >
-                📺
-              </a>
+            
             </div>
 
             <div className="space-y-2 text-sm">
               <p className="text-white/80">
-                📧 hello@seoulcha.com
+                📧 support@seoulcha.com
               </p>
               <p className="text-white/80">
                 🕒 Mon-Thu: 10AM-9PM

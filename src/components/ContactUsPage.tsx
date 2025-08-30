@@ -1,11 +1,11 @@
 import { EnquiryForm } from "./EnquiryForm";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   MessageCircle,
   Instagram,
   Facebook,
@@ -20,9 +20,10 @@ export function ContactUsPage() {
       icon: MapPin,
       title: "Visit Our Flagship Store",
       details: [
-        "123 Hongdae Street, Mapo-gu",
-        "Seoul, South Korea 04039",
-        "Near Hongik University Station"
+        "FOOD CASTLE",
+        "Vasna - Bhayli Main Road, Behind Nayara Petrol Pump",
+        "Bhayli, Vadodara(Gujarat) 391410"
+
       ],
       action: {
         label: "Get Directions",
@@ -31,12 +32,12 @@ export function ContactUsPage() {
     },
     {
       icon: Phone,
-      title: "Call Us",
-      details: [
-        "Korea: +82-2-1234-5678",
-        "International: +1-555-SEOUL-CHA",
-        "Franchise Hotline: +82-2-9876-5432"
-      ],
+      // title: "Call Us",
+      // details: [
+      //   "Korea: +82-2-1234-5678",
+      //   "International: +1-555-SEOUL-CHA",
+      //   "Franchise Hotline: +82-2-9876-5432"
+      // ],
       action: {
         label: "Call Now",
         onClick: () => window.open('tel:+821234567890', '_blank')
@@ -46,13 +47,13 @@ export function ContactUsPage() {
       icon: Mail,
       title: "Email Us",
       details: [
-        "General: hello@seoulcha.com",
-        "Franchise: franchise@seoulcha.com",
-        "Press: media@seoulcha.com"
+        "Enquiry: support@seoulcha.com",
+        // "Franchise: franchise@seoulcha.com",
+        // "Press: media@seoulcha.com"
       ],
       action: {
         label: "Send Email",
-        onClick: () => window.open('mailto:hello@seoulcha.com', '_blank')
+        onClick: () => window.open('mailto:support@seoulcha.com', '_blank')
       }
     },
     {
@@ -72,7 +73,6 @@ export function ContactUsPage() {
       icon: Instagram,
       name: "Instagram",
       handle: "@seoulcha",
-      followers: "125K followers",
       url: "https://instagram.com/seoulcha",
       color: "from-pink-500 to-purple-500"
     },
@@ -80,7 +80,6 @@ export function ContactUsPage() {
       icon: Facebook,
       name: "Facebook",
       handle: "Seoul Cha Official",
-      followers: "89K likes",
       url: "https://facebook.com/seoulcha",
       color: "from-blue-500 to-blue-600"
     },
@@ -88,7 +87,6 @@ export function ContactUsPage() {
       icon: Twitter,
       name: "Twitter",
       handle: "@SeoulChaOfficial",
-      followers: "45K followers",
       url: "https://twitter.com/seoulcha",
       color: "from-sky-400 to-sky-600"
     },
@@ -104,28 +102,10 @@ export function ContactUsPage() {
 
   const locations = [
     {
-      name: "Seoul Flagship - Hongdae",
-      address: "123 Hongdae Street, Mapo-gu, Seoul",
-      phone: "+82-2-1234-5678",
+      name: "Vadodara - Bhayli",
+      address: "FOOD CASTLE, Vasna-Bhayli Main Road, Behind Nayara Petrol Pump, Bhayli, Vadodara (Gujarat) 391410",
+      phone: "+91 98765 43210",
       status: "Open Now"
-    },
-    {
-      name: "Seoul Branch - Gangnam",
-      address: "456 Gangnam-daero, Gangnam-gu, Seoul",
-      phone: "+82-2-2345-6789",
-      status: "Open Now"
-    },
-    {
-      name: "Seoul Branch - Myeongdong",
-      address: "789 Myeongdong-gil, Jung-gu, Seoul",
-      phone: "+82-2-3456-7890",
-      status: "Open Now"
-    },
-    {
-      name: "Busan Branch - Haeundae",
-      address: "321 Haeundae-ro, Haeundae-gu, Busan",
-      phone: "+82-51-1234-5678",
-      status: "Opening Soon"
     }
   ];
 
