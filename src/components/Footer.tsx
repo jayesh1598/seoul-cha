@@ -43,10 +43,12 @@ export function Footer() {
 
             <div className="space-y-2 text-sm">
               <p className="text-white/80">
-                📍 123 K-Town Plaza
+                FOOD CASTLE,
+                Vasna - Bhayli Main Road, Behind Nayara Petrol Pump,
+               
               </p>
               <p className="text-white/80">
-                Los Angeles, CA 90010
+                Bhayli, Vadodara(Gujarat) 391410
               </p>
               <p className="text-white/80">
                 ☎️ (213) SEOUL-CHA
