@@ -55,12 +55,9 @@ export function ContactSection() {
                   <div>
                     <h4 className="mb-2">Store Address</h4>
                     <p className="text-gray-600">
-                      123 K-Town Plaza<br />
-                      Koreatown District<br />
-                      Los Angeles, CA 90010
-                    </p>
-                    <p className="text-sm text-gray-500 mt-2">
-                      (Corner of Olympic Blvd & Western Ave)
+                      FOOD CASTLE<br />
+                      Vasna-Bhayli Main Road, Behind Nayara Petrol Pump<br />
+                      Bhayli, Vadodara (Gujarat) 391410
                     </p>
                   </div>
                 </div>
