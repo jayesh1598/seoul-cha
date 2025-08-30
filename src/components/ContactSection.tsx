@@ -72,8 +72,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="mb-2">Phone & Orders</h4>
-                    <p className="text-gray-600">(213) SEOUL-CHA</p>
-                    <p className="text-gray-600">(213) 736-8524</p>
+                    <p className="text-gray-600">+91 98765 43210</p>
+                    <p className="text-gray-600">+91 90123 45678</p>
                   </div>
                 </div>
 
