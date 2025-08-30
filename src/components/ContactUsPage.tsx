@@ -53,7 +53,7 @@ export function ContactUsPage() {
       ],
       action: {
         label: "Send Email",
-        onClick: () => window.open('mailto:hello@seoulcha.com', '_blank')
+        onClick: () => window.open('mailto:support@seoulcha.com', '_blank')
       }
     },
     {
