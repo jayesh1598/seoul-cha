@@ -1,14 +1,15 @@
-import { defineConfig } from 'vite';
+
+  import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
   export default defineConfig({
     plugins: [react()],
-     build: { outDir: 'dist' } 
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
-        'vaul@1.1.2': 'vaul',
+  '@': path.resolve(__dirname, './src'),
+       'vaul@1.1.2': 'vaul',
         'sonner@2.0.3': 'sonner',
         'recharts@2.15.2': 'recharts',
         'react-resizable-panels@2.1.7': 'react-resizable-panels',
@@ -17,8 +18,9 @@ import { defineConfig } from 'vite';
         'next-themes@0.4.6': 'next-themes',
         'lucide-react@0.487.0': 'lucide-react',
         'input-otp@1.4.2': 'input-otp',
-        'figma:asset/5f3293e26c3a72313df94192d5ddb9c2167dd755.png': path.resolve(__dirname, './src/assets/5f3293e26c3a72313df94192d5ddb9c2167dd755.png'),
-        'figma:asset/0acdabceb6da815cd678760318edd0e604397810.png': path.resolve(__dirname, './src/assets/0acdabceb6da815cd678760318edd0e604397810.png'),
+        'figma:asset/db7eed2ad98fd5b3e9e4c797c79b1b140a3b5c1e.png': path.resolve(__dirname, './src/assets/db7eed2ad98fd5b3e9e4c797c79b1b140a3b5c1e.png'),
+        'figma:asset/4ef7be7dd4b9a19d9a6a13808680e8560b8fbf93.png': path.resolve(__dirname, './src/assets/4ef7be7dd4b9a19d9a6a13808680e8560b8fbf93.png'),
+        'figma:asset/4b596881e05ab14298984764fa64bb70f402cca2.png': path.resolve(__dirname, './src/assets/4b596881e05ab14298984764fa64bb70f402cca2.png'),
         'embla-carousel-react@8.6.0': 'embla-carousel-react',
         'cmdk@1.1.1': 'cmdk',
         'class-variance-authority@0.7.1': 'class-variance-authority',
@@ -53,10 +55,10 @@ import { defineConfig } from 'vite';
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist',
     },
     server: {
       port: 3000,
-      open: false,
+      open: true,
     },
   });
