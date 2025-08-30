@@ -184,15 +184,15 @@ export function ContactSection() {
               
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
                     style={{ backgroundColor: 'var(--seoul-mint)' }}
                   >
-                    🚇
+                    🛺
                   </div>
                   <div>
-                    <p>Metro Purple Line - Wilshire/Western Station</p>
-                    <p className="text-sm text-gray-500">5-minute walk</p>
+                    <p>Auto-rickshaw and Taxi available</p>
+                    <p className="text-sm text-gray-500">Near Nayara Petrol Pump</p>
                   </div>
                 </div>
                 
