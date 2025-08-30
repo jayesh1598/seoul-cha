@@ -20,9 +20,10 @@ export function ContactUsPage() {
       icon: MapPin,
       title: "Visit Our Flagship Store",
       details: [
-        "123 Hongdae Street, Mapo-gu",
-        "Seoul, South Korea 04039",
-        "Near Hongik University Station"
+        "FOOD CASTLE",
+        "Vasna - Bhayli Main Road, Behind Nayara Petrol Pump",
+        "Bhayli, Vadodara(Gujarat) 391410"
+
       ],
       action: {
         label: "Get Directions",
