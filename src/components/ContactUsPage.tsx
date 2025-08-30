@@ -1,6 +1,7 @@
 import { EnquiryForm } from "./EnquiryForm";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
+import { EnquiryForm } from "./EnquiryForm";
 import { 
   MapPin, 
   Phone, 
@@ -100,32 +101,14 @@ export function ContactUsPage() {
     }
   ];
 
-  // const locations = [
-  //   {
-  //     name: "Seoul Flagship - Hongdae",
-  //     address: "123 Hongdae Street, Mapo-gu, Seoul",
-  //     phone: "+82-2-1234-5678",
-  //     status: "Open Now"
-  //   },
-  //   {
-  //     name: "Seoul Branch - Gangnam",
-  //     address: "456 Gangnam-daero, Gangnam-gu, Seoul",
-  //     phone: "+82-2-2345-6789",
-  //     status: "Open Now"
-  //   },
-  //   {
-  //     name: "Seoul Branch - Myeongdong",
-  //     address: "789 Myeongdong-gil, Jung-gu, Seoul",
-  //     phone: "+82-2-3456-7890",
-  //     status: "Open Now"
-  //   },
-  //   {
-  //     name: "Busan Branch - Haeundae",
-  //     address: "321 Haeundae-ro, Haeundae-gu, Busan",
-  //     phone: "+82-51-1234-5678",
-  //     status: "Opening Soon"
-  //   }
-  // ];
+  const locations = [
+    {
+      name: "Vadodara - Bhayli",
+      address: "FOOD CASTLE, Vasna-Bhayli Main Road, Behind Nayara Petrol Pump, Bhayli, Vadodara (Gujarat) 391410",
+      phone: "+91 98765 43210",
+      status: "Open Now"
+    }
+  ];
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "+821234567890";
