@@ -2,13 +2,28 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 
+function figmaAssetAlias() {
+  return {
+    name: 'figma-asset-alias',
+    enforce: 'pre',
+    resolveId(source: string) {
+      if (source.startsWith('figma:asset/')) {
+        const filename = source.slice('figma:asset/'.length)
+        // Expect the file to be present under src/assets/<filename>
+        return path.resolve(__dirname, 'src/assets', filename)
+      }
+      return null
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react()],
+  plugins: [figmaAssetAlias(), react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
 
-      // versioned import shims
+      // versioned import shims (safe to keep)
       'vaul@1.1.2': 'vaul',
       'sonner@2.0.3': 'sonner',
       'recharts@2.15.2': 'recharts',
@@ -49,14 +64,6 @@ export default defineConfig({
       '@radix-ui/react-aspect-ratio@1.1.2': '@radix-ui/react-aspect-ratio',
       '@radix-ui/react-alert-dialog@1.1.6': '@radix-ui/react-alert-dialog',
       '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
-
-      // figma asset shims (mapped to local files)
-      'figma:asset/db7eed2ad98fd5b3e9e4c797c79b1b140a3b5c1e.png':
-        path.resolve(__dirname, './src/assets/db7eed2ad98fd5b3e9e4c797c79b1b140a3b5c1e.png'),
-      'figma:asset/4ef7be7dd4b9a19d9a6a13808680e8560b8fbf93.png':
-        path.resolve(__dirname, './src/assets/4ef7be7dd4b9a19d9a6a13808680e8560b8fbf93.png'),
-      'figma:asset/4b596881e05ab14298984764fa64bb70f402cca2.png':
-        path.resolve(__dirname, './src/assets/4b596881e05ab14298984764fa64bb70f402cca2.png'),
     },
   },
   build: {
