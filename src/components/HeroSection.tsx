@@ -37,7 +37,7 @@ export function HeroSection() {
                 <span className="block gradient-pink-mint bg-clip-text text-transparent">
                   Bubble Tea
                 </span>
-                <span className="block korean-handwritten text-3xl md:text-5xl" style={{ color: 'var(--seoul-mint)' }}>
+                <span className="block korean-handwritten text-3xl md:text-5xl" style={{ color: 'var(--seoul-turquoise)' }}>
                   Fresh from Seoul
                 </span>
               </h1>
@@ -92,7 +92,7 @@ export function HeroSection() {
                 </div>
                 
                 <div className="korean-handwritten text-center p-4 rounded-2xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
-                  <span className="text-2xl" style={{ color: 'var(--seoul-lavender)' }}>
+                  <span className="text-2xl" style={{ color: 'var(--seoul-purple)' }}>
                     #SeoulChaVibes
                   </span>
                 </div>
