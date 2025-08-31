@@ -145,12 +145,7 @@ export function ContactSection() {
               >
                 🛵 Order for Delivery
               </Button>
-              <Button 
-                variant="outline" 
-                className="px-8 py-3 rounded-full border-white text-white hover:bg-white hover:text-black"
-              >
-                🏃‍♀️ Order for Pickup
-              </Button>
+             
             </div>
           </div>
         </div>
