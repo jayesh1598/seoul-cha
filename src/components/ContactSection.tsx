@@ -72,8 +72,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="mb-2">Phone & Orders</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 90123 45678</p>
+                    <p className="text-gray-600">+91 6357 013 736</p>
+                  
                   </div>
                 </div>
 
