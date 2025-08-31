@@ -16,7 +16,7 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column - Illustration */}
           <div className="relative">
-            <div className="rounded-3xl p-8" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+            <div className="rounded-3xl p-8" style={{ backgroundColor: '#fde15f' }}>
               <div className="grid grid-cols-3 gap-8 items-center justify-items-center">
                 {/* Tea Leaves Icon */}
                 <div className="text-center">
