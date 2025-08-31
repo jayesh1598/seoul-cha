@@ -218,7 +218,7 @@ html {
 
   /* Legacy gradient classes mapped to new colors */
   .gradient-pink-mint {
-    background: linear-gradient(135deg, #fde15f, var(--seoul-turquoise));
+    background: linear-gradient(135deg, #fae25c, #df814b);
   }
 
   .gradient-lavender-cream {
