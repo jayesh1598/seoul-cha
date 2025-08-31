@@ -51,35 +51,7 @@ export function FranchisePage() {
     }
   ];
 
-  const requirements = [
-    {
-      title: "Financial Requirements",
-      items: [
-        "Initial franchise fee: $45,000 USD",
-        "Total investment: $120,000 - $180,000 USD",
-        "Liquid capital: $80,000 USD minimum",
-        "Net worth: $200,000 USD minimum"
-      ]
-    },
-    {
-      title: "Location Requirements",
-      items: [
-        "High foot traffic area (universities, shopping malls, business districts)",
-        "Store size: 800-1,200 sq ft minimum",
-        "Prominent street visibility",
-        "Target demographic: 18-35 years old"
-      ]
-    },
-    {
-      title: "Experience Requirements",
-      items: [
-        "Previous food service or retail experience preferred",
-        "Strong business management skills",
-        "Passion for Korean culture and bubble tea",
-        "Commitment to brand standards and values"
-      ]
-    }
-  ];
+
 
   const process = [
     {
@@ -142,12 +114,7 @@ export function FranchisePage() {
             >
               Start Your Franchise Journey
             </Button>
-            <Button 
-              variant="outline" 
-              className="border-purple-300 text-purple-700 py-3 px-8 rounded-full hover:bg-purple-50"
-            >
-              Download Franchise Kit
-            </Button>
+            
           </div>
           
           {/* Floating shapes */}
