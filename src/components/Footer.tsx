@@ -51,7 +51,7 @@ export function Footer() {
                 Bhayli, Vadodara(Gujarat) 391410
               </p>
               <p className="text-white/80">
-                ☎️ (213) SEOUL-CHA
+                ☎️ (+91) 6357 013 736
               </p>
             </div>
           </div>
