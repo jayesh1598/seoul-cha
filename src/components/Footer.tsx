@@ -65,38 +65,22 @@ export function Footer({ onPageChange }: FooterProps) {
             <h4 className="text-white text-lg mb-4">
               🔗 Quick Links
             </h4>
-            <div className="space-y-2">
-              <a
-                href="#menu"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
+           {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => onPageChange(item.id)}
+                className={`px-3 py-2 rounded-full transition-all duration-300 ${
+                  currentPage === item.id
+                    ? 'bg-gradient-to-r from-pink-200 to-purple-200 text-purple-800 shadow-sm'
+                    : 'text-gray-700 hover:text-purple-600 hover:bg-pink-50'
+                }`}
               >
-                Our Menu
-              </a>
-              <a
-                href="menu"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Customize Your Drink
-              </a>
-              <a
-                href="#catering"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Catering Services
-              </a>
-              <a
-                href="#events"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Store Events
-              </a>
-              <a
-                href="#franchise"
-                className="block text-white/80 hover:text-white text-sm transition-colors"
-              >
-                Franchise Opportunities
-              </a>
-            </div>
+                {item.label}
+              </button>
+            ))}
+          </div>
           </div>
 
           
