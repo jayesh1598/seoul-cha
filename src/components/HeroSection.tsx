@@ -91,7 +91,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 
-                <div className="korean-handwritten text-center p-4 rounded-2xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+                <div className="korean-handwritten text-center p-4 rounded-2xl" style={{ backgroundColor: '#fde15f' }}>
                   <span className="text-2xl" style={{ color: 'var(--seoul-purple)' }}>
                     #SeoulChaVibes
                   </span>
