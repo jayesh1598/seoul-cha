@@ -88,7 +88,7 @@ export function BaristasSection() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: '#fde15f' }}>
                   <div className="w-12 h-12 rounded-full gradient-purple-cream flex items-center justify-center text-xl">
                     🧋
                   </div>
@@ -98,7 +98,7 @@ export function BaristasSection() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: '#fde15f' }}>
                   <div className="w-12 h-12 rounded-full gradient-yellow-turquoise flex items-center justify-center text-xl">
                     🇰🇷
                   </div>
@@ -130,7 +130,7 @@ export function BaristasSection() {
             </div>
 
             {/* Korean Text with Translation */}
-            <div className="p-6 rounded-xl border-l-4" style={{ backgroundColor: 'var(--seoul-cream)', borderColor: 'var(--seoul-purple)' }}>
+            <div className="p-6 rounded-xl border-l-4" style={{ backgroundColor: '#fde15f', borderColor: 'var(--seoul-purple)' }}>
               <p className="korean-handwritten text-xl mb-2" style={{ color: 'var(--seoul-purple)' }}>
                 "정성을 다해 만든 차 한 잔"
               </p>
