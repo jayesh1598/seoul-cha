@@ -1,6 +1,7 @@
 import { EnquiryForm } from "./EnquiryForm";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
+import { EnquiryForm } from "./EnquiryForm";
 import {
   MapPin,
   Phone,
@@ -164,7 +165,7 @@ export function ContactUsPage() {
                   </div>
                   <h3 className="mb-4">{info.title}</h3>
                   <div className="space-y-2 mb-4">
-                    {info.details.map((detail, detailIndex) => (
+                    {(info.details ?? []).map((detail, detailIndex) => (
                       <p key={detailIndex} className="text-gray-600 text-sm">{detail}</p>
                     ))}
                   </div>
