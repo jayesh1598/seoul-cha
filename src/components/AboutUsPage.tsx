@@ -188,27 +188,6 @@ export function AboutUsPage() {
           </div>
         </section>
 
-        {/* Meet Our Team */}
-        <section className="py-20">
-          <h2 className="korean-handwritten text-3xl text-center text-purple-600 mb-12">
-            Meet Our Seoul Cha Family 👥
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="text-center border-0 bg-gradient-to-br from-pink-50 to-purple-50 hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <CardContent className="p-8">
-                  <div className="w-24 h-24 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <Users className="text-purple-600" size={32} />
-                  </div>
-                  <h3 className="mb-2">{member.name}</h3>
-                  <p className="korean-handwritten text-pink-600 mb-4">{member.role}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
 
         {/* Seoul Connection */}
         <section className="py-20">

@@ -32,22 +32,21 @@ export function ContactUsPage() {
     },
     {
       icon: Phone,
-      // title: "Call Us",
-      // details: [
-      //   "Korea: +82-2-1234-5678",
-      //   "International: +1-555-SEOUL-CHA",
-      //   "Franchise Hotline: +82-2-9876-5432"
-      // ],
+      title: "Call Us",
+      details: [
+        
+        "Franchise Enquiry: +916357013736"
+      ],
       action: {
         label: "Call Now",
-        onClick: () => window.open('tel:+821234567890', '_blank')
+        onClick: () => window.open('tel:+916357013736', '_blank')
       }
     },
     {
       icon: Mail,
       title: "Email Us",
       details: [
-        "Enquiry: support@seoulcha.com",
+        "Franchise Enquiry: support@seoulcha.com",
         // "Franchise: franchise@seoulcha.com",
         // "Press: media@seoulcha.com"
       ],
@@ -72,15 +71,15 @@ export function ContactUsPage() {
     {
       icon: Instagram,
       name: "Instagram",
-      handle: "@seoulcha",
-      url: "https://instagram.com/seoulcha",
+      handle: "@seoul_cha_",
+      url: "https://www.instagram.com/seoul_cha_/",
       color: "from-pink-500 to-purple-500"
     },
     {
       icon: Facebook,
       name: "Facebook",
       handle: "Seoul Cha Official",
-      url: "https://facebook.com/seoulcha",
+      url: "https://www.facebook.com/profile.php?id=61572602241104",
       color: "from-blue-500 to-blue-600"
     },
     {
@@ -95,7 +94,7 @@ export function ContactUsPage() {
       name: "WhatsApp",
       handle: "Business Chat",
       followers: "Quick replies",
-      url: "https://wa.me/821234567890",
+      url: "https://wa.me/916357013736",
       color: "from-green-500 to-green-600"
     }
   ];
@@ -104,13 +103,13 @@ export function ContactUsPage() {
     {
       name: "Vadodara - Bhayli",
       address: "FOOD CASTLE, Vasna-Bhayli Main Road, Behind Nayara Petrol Pump, Bhayli, Vadodara (Gujarat) 391410",
-      phone: "+91 98765 43210",
+      phone: "+91 635 7013 736",
       status: "Open Now"
     }
   ];
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+821234567890";
+    const phoneNumber = "+916357013736";
     const message = "Hi! I have a question about Seoul Cha. Can you help me?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -164,7 +163,7 @@ export function ContactUsPage() {
                   </div>
                   <h3 className="mb-4">{info.title}</h3>
                   <div className="space-y-2 mb-4">
-                    {info.details.map((detail, detailIndex) => (
+                    {(info.details ?? []).map((detail, detailIndex) => (
                       <p key={detailIndex} className="text-gray-600 text-sm">{detail}</p>
                     ))}
                   </div>

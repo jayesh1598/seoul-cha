@@ -120,12 +120,6 @@ export function FranchisePage() {
     }
   ];
 
-  const stats = [
-    { number: "50+", label: "Franchise Locations", icon: MapPin },
-    { number: "95%", label: "Franchisee Satisfaction", icon: Heart },
-    { number: "18 mos", label: "Average ROI Timeline", icon: TrendingUp },
-    { number: "4.8★", label: "Customer Rating", icon: Star }
-  ];
 
   return (
     <div className="min-h-screen pt-20 pb-16">
@@ -163,22 +157,7 @@ export function FranchisePage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Stats Section */}
-        <section className="py-16 -mt-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <Card key={index} className="text-center border-0 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="bg-gradient-to-br from-pink-100 to-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <stat.icon className="text-purple-600" size={20} />
-                  </div>
-                  <div className="korean-handwritten text-2xl text-purple-600 mb-1">{stat.number}</div>
-                  <p className="text-sm text-gray-600">{stat.label}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+     
 
         {/* Why Choose Seoul Cha */}
         <section className="py-20">
@@ -201,35 +180,23 @@ export function FranchisePage() {
           </div>
         </section>
 
-        {/* Franchise Requirements */}
-        <section className="py-20 bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl">
-          <div className="max-w-6xl mx-auto px-8">
-            <h2 className="korean-handwritten text-3xl text-center text-purple-600 mb-12">
-              Franchise Requirements 📋
+  {/* Enquiry Form */}
+        <section id="enquiry-form" className="py-20">
+          <div className="text-center mb-12">
+            <h2 className="korean-handwritten text-3xl text-purple-600 mb-4">
+              Ready to Start Your Seoul Cha Journey? 🌟
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {requirements.map((req, index) => (
-                <Card key={index} className="border-0 bg-white/80 backdrop-blur-sm">
-                  <CardHeader className="pb-4">
-                    <CardTitle className="text-lg text-purple-600">{req.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
-                      {req.items.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-start gap-3 text-sm">
-                          <CheckCircle size={16} className="text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Take the first step towards owning your Seoul Cha franchise. Fill out the form below 
+              and our franchise team will contact you within 24 hours.
+            </p>
           </div>
+          
+          <EnquiryForm 
+            type="franchise" 
+            title="Franchise Enquiry Form"
+          />
         </section>
-
         {/* Franchise Process */}
         <section className="py-20">
           <h2 className="korean-handwritten text-3xl text-center text-pink-600 mb-12">
@@ -295,23 +262,7 @@ export function FranchisePage() {
           </div>
         </section>
 
-        {/* Enquiry Form */}
-        <section id="enquiry-form" className="py-20">
-          <div className="text-center mb-12">
-            <h2 className="korean-handwritten text-3xl text-purple-600 mb-4">
-              Ready to Start Your Seoul Cha Journey? 🌟
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Take the first step towards owning your Seoul Cha franchise. Fill out the form below 
-              and our franchise team will contact you within 24 hours.
-            </p>
-          </div>
-          
-          <EnquiryForm 
-            type="franchise" 
-            title="Franchise Enquiry Form"
-          />
-        </section>
+      
       </div>
     </div>
   );

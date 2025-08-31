@@ -140,12 +140,7 @@ export function BaristasSection() {
             </div>
 
             {/* Meet the Team CTA */}
-            <div className="text-center p-6 rounded-xl shadow-lg" style={{ backgroundColor: 'var(--seoul-mint)' }}>
-              <p className="text-white mb-4">Want to meet our tea masters in person?</p>
-              <Badge className="px-6 py-2" style={{ backgroundColor: 'white', color: 'var(--seoul-mint)' }}>
-                Visit Our Store 📍
-              </Badge>
-            </div>
+         
           </div>
         </div>
       </div>

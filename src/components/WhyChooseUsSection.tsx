@@ -151,18 +151,7 @@ export function WhyChooseUsSection() {
         </div>
 
         {/* Customer Quote */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <div className="text-center p-8 rounded-3xl" style={{ backgroundColor: 'var(--seoul-mint)', color: 'white' }}>
-            <div className="text-4xl mb-4">💬</div>
-            <blockquote className="text-xl mb-4 korean-handwritten">
-              "Seoul Cha isn't just bubble tea - it's a cultural experience. 
-              Every sip takes me back to the cozy cafes in Hongdae!"
-            </blockquote>
-            <cite className="text-sm opacity-80">
-              — Sarah K., Regular Customer & Seoul Expat
-            </cite>
-          </div>
-        </div>
+     
       </div>
     </section>
   );

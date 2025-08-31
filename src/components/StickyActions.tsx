@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export function StickyActions() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+821234567890"; // Replace with actual Seoul Cha WhatsApp number
+    const phoneNumber = "+916357013736"; // Replace with actual Seoul Cha WhatsApp number
     const message = "Hi! I'm interested in Seoul Cha bubble tea. Can you help me?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -20,13 +20,13 @@ export function StickyActions() {
     {
       icon: Instagram,
       label: "Instagram",
-      onClick: () => window.open('https://instagram.com/seoulcha', '_blank'),
+      onClick: () => window.open('https://www.instagram.com/seoul_cha_/', '_blank'),
       bgColor: "bg-pink-500 hover:bg-pink-600"
     },
     {
       icon: Facebook,
       label: "Facebook",
-      onClick: () => window.open('https://facebook.com/seoulcha', '_blank'),
+      onClick: () => window.open('https://www.facebook.com/profile.php?id=61572602241104', '_blank'),
       bgColor: "bg-blue-500 hover:bg-blue-600"
     },
     {
@@ -38,7 +38,7 @@ export function StickyActions() {
     {
       icon: Phone,
       label: "Call Us",
-      onClick: () => window.open('tel:+821234567890', '_blank'),
+      onClick: () => window.open('tel:+91 63570 13736', '_blank'),
       bgColor: "bg-purple-500 hover:bg-purple-600"
     }
   ];

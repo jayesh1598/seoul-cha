@@ -59,16 +59,7 @@ export function HeroSection() {
               >
                 🛵 Order on Zomato
               </Button>
-              <Button 
-                variant="outline" 
-                className="px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ 
-                  borderColor: 'var(--seoul-mint)', 
-                  color: 'var(--seoul-mint)' 
-                }}
-              >
-                📍 Find Us
-              </Button>
+             
             </div>
           </div>
 

@@ -11,6 +11,8 @@ import { MenuPage } from "./components/MenuPage";
 import { AboutUsPage } from "./components/AboutUsPage";
 import { FranchisePage } from "./components/FranchisePage";
 import { ContactUsPage } from "./components/ContactUsPage";
+import { TermsConditionsPage } from "./components/TermsConditionsPage";
+import { PrivacyPolicyPage } from "./components/PrivacyPolicyPage";
 import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
@@ -26,21 +28,25 @@ export default function App() {
         return <FranchisePage />;
       case 'contact':
         return <ContactUsPage />;
+      case 'terms':
+        return <TermsConditionsPage onPageChange={setCurrentPage} />;
+      case 'privacy':
+        return <PrivacyPolicyPage onPageChange={setCurrentPage} />;
       default:
         return (
           <>
             {/* Hero Section */}
             <HeroSection />
-            
+
             {/* About Bubble Tea Section */}
             <AboutSection />
-            
+
             {/* Our Seoul Cha Baristas */}
             <BaristasSection />
-            
+
             {/* Why Choose Seoul Cha */}
             <WhyChooseUsSection />
-            
+
             {/* Contact Section */}
             <ContactSection />
           </>
@@ -60,7 +66,7 @@ export default function App() {
       {renderPage()}
       
       {/* Footer */}
-      <Footer />
+      <Footer onPageChange={setCurrentPage} />
       
       {/* Toast Notifications */}
       <Toaster />

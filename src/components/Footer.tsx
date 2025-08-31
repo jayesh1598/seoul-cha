@@ -3,7 +3,11 @@ import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
 import seoulChaLogo from "figma:asset/0acdabceb6da815cd678760318edd0e604397810.png";
 
-export function Footer() {
+interface FooterProps {
+  onPageChange?: (page: string) => void;
+}
+
+export function Footer({ onPageChange }: FooterProps) {
   return (
     <footer
       className="relative overflow-hidden"
@@ -29,7 +33,7 @@ export function Footer() {
         <Separator className="bg-white/20 mb-12" />
 
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
             <h4 className="text-white text-lg mb-4">
@@ -51,7 +55,7 @@ export function Footer() {
                 Bhayli, Vadodara(Gujarat) 391410
               </p>
               <p className="text-white/80">
-                ☎️ (213) SEOUL-CHA
+                ☎️ (+91) 6357 013 736
               </p>
             </div>
           </div>
@@ -69,7 +73,7 @@ export function Footer() {
                 Our Menu
               </a>
               <a
-                href="#customize"
+                href="menu"
                 className="block text-white/80 hover:text-white text-sm transition-colors"
               >
                 Customize Your Drink
@@ -98,7 +102,7 @@ export function Footer() {
           
 
           {/* Connect With Us */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <h4 className="text-white text-lg mb-4">
               📱 Connect With Us
             </h4>
@@ -144,7 +148,7 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/60 text-sm text-center md:text-left">
-            © 2024 Seoul Cha. All rights reserved. Made with 💜
+            © 2025 Seoul Cha. All rights reserved. Made with 💜
             <a href="www.softcofrnds.com">
               SoftCoFrnds IT Solutions
             </a>
@@ -152,27 +156,24 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm">
-            <a
-              href="#terms"
-              className="text-white/80 hover:text-white transition-colors"
+            <button
+              onClick={() => onPageChange?.('terms')}
+              className="text-white/80 hover:text-white transition-colors cursor-pointer"
             >
               Terms & Conditions
-            </a>
-            <a
-              href="#privacy"
-              className="text-white/80 hover:text-white transition-colors"
+            </button>
+            <button
+              onClick={() => onPageChange?.('privacy')}
+              className="text-white/80 hover:text-white transition-colors cursor-pointer"
             >
               Privacy Policy
-            </a>
+            </button>
+
             <a
-              href="#media"
+              href="https://www.instagram.com/seoul_cha_/"
               className="text-white/80 hover:text-white transition-colors"
-            >
-              Media Kit
-            </a>
-            <a
-              href="#instagram"
-              className="text-white/80 hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Instagram
             </a>

@@ -72,8 +72,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="mb-2">Phone & Orders</h4>
-                    <p className="text-gray-600">+91 98765 43210</p>
-                    <p className="text-gray-600">+91 90123 45678</p>
+                    <p className="text-gray-600">+91 6357 013 736</p>
+                  
                   </div>
                 </div>
 
@@ -87,63 +87,13 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="mb-2">Email</h4>
-                    <p className="text-gray-600">hello@seoulcha.com</p>
-                    <p className="text-gray-600">catering@seoulcha.com</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Hours Card */}
-            <Card className="border-0 shadow-xl">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  🕒 <span>Store Hours</span>
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span>Monday - Thursday</span>
-                    <span className="text-gray-600">10:00 AM - 9:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Friday - Saturday</span>
-                    <span className="text-gray-600">10:00 AM - 11:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Sunday</span>
-                    <span className="text-gray-600">11:00 AM - 8:00 PM</span>
-                  </div>
+                    <p className="text-gray-600">support@seoulcha.com</p>
                   
-                  <div 
-                    className="mt-4 p-3 rounded-xl text-center"
-                    style={{ backgroundColor: 'var(--seoul-mint)', color: 'white' }}
-                  >
-                    <span className="text-sm">🟢 Open Now - Closes at 9:00 PM</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Quick Actions */}
-            <div className="grid grid-cols-2 gap-4">
-              <Button 
-                className="py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ backgroundColor: 'var(--seoul-pink)', color: 'white', border: 'none' }}
-              >
-                🗺️ Get Directions
-              </Button>
-              
-              <Button 
-                variant="outline"
-                className="py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ borderColor: 'var(--seoul-lavender)', color: 'var(--seoul-lavender)' }}
-              >
-                📞 Call Now
-              </Button>
-            </div>
           </div>
 
           {/* Right Column - Map & Additional Info */}
@@ -154,14 +104,15 @@ export function ContactSection() {
                 {/* Map placeholder - in real implementation, this would be an embedded Google Maps */}
                 <div className="text-center">
                   <div className="text-6xl mb-4">🗺️</div>
-                  <h3 className="text-xl mb-2">Interactive Map</h3>
-                  <p className="text-gray-600 mb-4">Click to open in Google Maps</p>
+                  <h3 className="text-xl mb-2">Store Location</h3>
+                 <a href="https://maps.app.goo.gl/yXjgtHBzWo3ZvVi76" target="blank"> <p className="text-gray-600 mb-4">Click to open in Google Maps</p>
                   <Button 
                     style={{ backgroundColor: 'var(--seoul-sky)', color: 'white' }}
                     className="rounded-full"
                   >
                     📍 Open in Google Maps
-                  </Button>
+                    </Button>
+                  </a>
                 </div>
                 
                 {/* Floating location pin */}
@@ -174,80 +125,7 @@ export function ContactSection() {
               </div>
             </Card>
 
-            {/* Transportation Info */}
-            <Card className="border-0 shadow-xl">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  🚇 <span>How to Get Here</span>
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--seoul-mint)' }}
-                  >
-                    🛺
-                  </div>
-                  <div>
-                    <p>Auto-rickshaw and Taxi available</p>
-                    <p className="text-sm text-gray-500">Near Nayara Petrol Pump</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div 
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--seoul-peach)' }}
-                  >
-                    🅿️
-                  </div>
-                  <div>
-                    <p>Free parking available</p>
-                    <p className="text-sm text-gray-500">Behind the building</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div 
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--seoul-lavender)' }}
-                  >
-                    🚴
-                  </div>
-                  <div>
-                    <p>Bike-friendly</p>
-                    <p className="text-sm text-gray-500">Bike racks available</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* Special Events */}
-            <Card className="border-0 shadow-xl">
-              <div className="gradient-lavender-cream p-6 text-center text-white">
-                <h3 className="text-xl mb-2">🎉 Special Events</h3>
-                <p className="text-sm opacity-90">Join us for Korean cultural events!</p>
-              </div>
-              
-              <CardContent className="p-6">
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span>K-Pop Karaoke Nights</span>
-                    <span className="text-sm text-gray-600">Every Friday</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Bubble Tea Making Class</span>
-                    <span className="text-sm text-gray-600">2nd Saturday</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Korean Language Exchange</span>
-                    <span className="text-sm text-gray-600">Wednesdays</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
@@ -262,17 +140,13 @@ export function ContactSection() {
             </h3>
             <p className="mb-6">Order online for pickup or delivery!</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://www.zomato.com/vadodara/seoul-cha-bhayli/order" target="blank">
               <Button 
                 className="px-8 py-3 rounded-full bg-white text-black hover:bg-gray-100"
               >
                 🛵 Order for Delivery
               </Button>
-              <Button 
-                variant="outline" 
-                className="px-8 py-3 rounded-full border-white text-white hover:bg-white hover:text-black"
-              >
-                🏃‍♀️ Order for Pickup
-              </Button>
+             </a>
             </div>
           </div>
         </div>
