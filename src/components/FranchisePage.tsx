@@ -120,12 +120,6 @@ export function FranchisePage() {
     }
   ];
 
-  // const stats = [
-  //   { number: "50+", label: "Franchise Locations", icon: MapPin },
-  //   { number: "95%", label: "Franchisee Satisfaction", icon: Heart },
-  //   { number: "18 mos", label: "Average ROI Timeline", icon: TrendingUp },
-  //   { number: "4.8★", label: "Customer Rating", icon: Star }
-  // ];
 
   return (
     <div className="min-h-screen pt-20 pb-16">
