@@ -144,7 +144,7 @@ export function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/60 text-sm text-center md:text-left">
-            © 2024 Seoul Cha. All rights reserved. Made with 💜
+            © 2025 Seoul Cha. All rights reserved. Made with 💜
             <a href="www.softcofrnds.com">
               SoftCoFrnds IT Solutions
             </a>
