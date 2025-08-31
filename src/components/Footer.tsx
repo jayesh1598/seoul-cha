@@ -29,7 +29,7 @@ export function Footer() {
         <Separator className="bg-white/20 mb-12" />
 
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
             <h4 className="text-white text-lg mb-4">
