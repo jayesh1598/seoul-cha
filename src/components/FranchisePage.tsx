@@ -163,22 +163,7 @@ export function FranchisePage() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Stats Section */}
-        <section className="py-16 -mt-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <Card key={index} className="text-center border-0 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="bg-gradient-to-br from-pink-100 to-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <stat.icon className="text-purple-600" size={20} />
-                  </div>
-                  <div className="korean-handwritten text-2xl text-purple-600 mb-1">{stat.number}</div>
-                  <p className="text-sm text-gray-600">{stat.label}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+     
 
         {/* Why Choose Seoul Cha */}
         <section className="py-20">
