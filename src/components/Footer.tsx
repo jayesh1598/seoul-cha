@@ -173,7 +173,7 @@ export function Footer() {
             <a
               href="https://www.instagram.com/seoul_cha_/"
               className="text-white/80 hover:text-white transition-colors"
-            >
+            target="blank">
               Instagram
             </a>
           </div>
