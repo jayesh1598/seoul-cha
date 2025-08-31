@@ -124,55 +124,6 @@ export function ContactSection() {
               </div>
             </Card>
 
-            {/* Transportation Info */}
-            <Card className="border-0 shadow-xl">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  🚇 <span>How to Get Here</span>
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--seoul-mint)' }}
-                  >
-                    🛺
-                  </div>
-                  <div>
-                    <p>Auto-rickshaw and Taxi available</p>
-                    <p className="text-sm text-gray-500">Near Nayara Petrol Pump</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div 
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--seoul-peach)' }}
-                  >
-                    🅿️
-                  </div>
-                  <div>
-                    <p>Free parking available</p>
-                    <p className="text-sm text-gray-500">Behind the building</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div 
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-sm"
-                    style={{ backgroundColor: 'var(--seoul-lavender)' }}
-                  >
-                    🚴
-                  </div>
-                  <div>
-                    <p>Bike-friendly</p>
-                    <p className="text-sm text-gray-500">Bike racks available</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
           </div>
         </div>
