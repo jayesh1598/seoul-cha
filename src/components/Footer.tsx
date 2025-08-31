@@ -15,7 +15,7 @@ export function Footer({ onPageChange, currentPage }: FooterProps) {
   ];
 
   return (
-    <footer className="relative overflow-hidden" style={{ backgroundColor: "#da5f5c" }}>
+    <footer className="relative overflow-hidden" style={{ backgroundColor: "rgb(243 149 63)" }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <div className="absolute top-10 left-10 text-8xl text-white">🌸</div>
@@ -61,9 +61,10 @@ export function Footer({ onPageChange, currentPage }: FooterProps) {
                         onClick={() => onPageChange?.(item.id)}
                         className={`w-full text-left px-4 py-2 rounded-full transition-all duration-300 ${
                           isActive
-                            ? "bg-white text-[#da5f5c] shadow-sm"
+                            ? "bg-white shadow-sm"
                             : "text-white/90 hover:text-white hover:bg-white/10"
                         }`}
+                        style={isActive ? { color: 'var(--seoul-orange)' } : {}}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {item.label}

@@ -40,15 +40,15 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   
-  /* Seoul Cha Custom Colors - Korean Pop Culture Pastels */
-  --seoul-pink: #FFB3E6;
-  --seoul-mint: #B3FFE6;
-  --seoul-lavender: #E6B3FF;
-  --seoul-cream: #FFF2E6;
-  --seoul-peach: #FFCCB3;
-  --seoul-sky: #B3E6FF;
-  --seoul-rose: #FFB3CC;
-  --seoul-sage: #CCFFB3;
+  /* Seoul Cha Custom Colors - Logo Color Palette */
+  --seoul-yellow: #FFE55C;
+  --seoul-turquoise: #5BC0B0;
+  --seoul-orange: #FF9A56;
+  --seoul-pink: #FFB6C1;
+  --seoul-purple: #5D4E75;
+  --seoul-cream: #FFF8E1;
+  --seoul-coral: #FF8A80;
+  --seoul-teal: #4ECDC4;
 }
 
 .dark {
@@ -200,20 +200,37 @@ html {
 
 /* Seoul Cha Custom Utilities */
 @layer utilities {
+  .gradient-yellow-turquoise {
+    background: linear-gradient(135deg, var(--seoul-yellow), #f7923e);
+  }
+
+  .gradient-orange-pink {
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
+  }
+
+  .gradient-purple-cream {
+    background: linear-gradient(135deg, var(--seoul-purple), var(--seoul-cream));
+  }
+
+  .gradient-coral-teal {
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
+  }
+
+  /* Legacy gradient classes mapped to new colors */
   .gradient-pink-mint {
-    background: linear-gradient(135deg, var(--seoul-pink), var(--seoul-mint));
+    background: linear-gradient(135deg, #fae25c, #df814b);
   }
-  
+
   .gradient-lavender-cream {
-    background: linear-gradient(135deg, var(--seoul-lavender), var(--seoul-cream));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
-  
+
   .gradient-peach-sky {
-    background: linear-gradient(135deg, var(--seoul-peach), var(--seoul-sky));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
-  
+
   .gradient-rose-sage {
-    background: linear-gradient(135deg, var(--seoul-rose), var(--seoul-sage));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
   
   .floating-shape {
