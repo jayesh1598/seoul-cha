@@ -3,7 +3,11 @@ import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
 import seoulChaLogo from "figma:asset/0acdabceb6da815cd678760318edd0e604397810.png";
 
-export function Footer() {
+interface FooterProps {
+  onPageChange?: (page: string) => void;
+}
+
+export function Footer({ onPageChange }: FooterProps) {
   return (
     <footer
       className="relative overflow-hidden"
