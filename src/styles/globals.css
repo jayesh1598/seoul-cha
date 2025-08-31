@@ -201,11 +201,11 @@ html {
 /* Seoul Cha Custom Utilities */
 @layer utilities {
   .gradient-yellow-turquoise {
-    background: linear-gradient(135deg, var(--seoul-yellow), var(--seoul-turquoise));
+    background: linear-gradient(135deg, var(--seoul-yellow), #f7923e);
   }
 
   .gradient-orange-pink {
-    background: linear-gradient(135deg, var(--seoul-orange), var(--seoul-pink));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
 
   .gradient-purple-cream {
@@ -213,7 +213,7 @@ html {
   }
 
   .gradient-coral-teal {
-    background: linear-gradient(135deg, var(--seoul-coral), var(--seoul-teal));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
 
   /* Legacy gradient classes mapped to new colors */
@@ -222,15 +222,15 @@ html {
   }
 
   .gradient-lavender-cream {
-    background: linear-gradient(135deg, var(--seoul-purple), var(--seoul-cream));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
 
   .gradient-peach-sky {
-    background: linear-gradient(135deg, var(--seoul-orange), var(--seoul-teal));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
 
   .gradient-rose-sage {
-    background: linear-gradient(135deg, var(--seoul-coral), var(--seoul-yellow));
+    background: linear-gradient(135deg, #f8e25c, #f7923e);
   }
   
   .floating-shape {
