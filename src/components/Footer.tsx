@@ -98,7 +98,7 @@ export function Footer() {
           
 
           {/* Connect With Us */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <h4 className="text-white text-lg mb-4">
               📱 Connect With Us
             </h4>
