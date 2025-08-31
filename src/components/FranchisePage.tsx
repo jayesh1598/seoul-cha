@@ -180,7 +180,23 @@ export function FranchisePage() {
           </div>
         </section>
 
-
+  {/* Enquiry Form */}
+        <section id="enquiry-form" className="py-20">
+          <div className="text-center mb-12">
+            <h2 className="korean-handwritten text-3xl text-purple-600 mb-4">
+              Ready to Start Your Seoul Cha Journey? 🌟
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Take the first step towards owning your Seoul Cha franchise. Fill out the form below 
+              and our franchise team will contact you within 24 hours.
+            </p>
+          </div>
+          
+          <EnquiryForm 
+            type="franchise" 
+            title="Franchise Enquiry Form"
+          />
+        </section>
         {/* Franchise Process */}
         <section className="py-20">
           <h2 className="korean-handwritten text-3xl text-center text-pink-600 mb-12">
@@ -246,23 +262,7 @@ export function FranchisePage() {
           </div>
         </section>
 
-        {/* Enquiry Form */}
-        <section id="enquiry-form" className="py-20">
-          <div className="text-center mb-12">
-            <h2 className="korean-handwritten text-3xl text-purple-600 mb-4">
-              Ready to Start Your Seoul Cha Journey? 🌟
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Take the first step towards owning your Seoul Cha franchise. Fill out the form below 
-              and our franchise team will contact you within 24 hours.
-            </p>
-          </div>
-          
-          <EnquiryForm 
-            type="franchise" 
-            title="Franchise Enquiry Form"
-          />
-        </section>
+      
       </div>
     </div>
   );
