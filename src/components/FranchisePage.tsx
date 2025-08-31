@@ -180,34 +180,6 @@ export function FranchisePage() {
           </div>
         </section>
 
-        {/* Franchise Requirements */}
-        <section className="py-20 bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl">
-          <div className="max-w-6xl mx-auto px-8">
-            <h2 className="korean-handwritten text-3xl text-center text-purple-600 mb-12">
-              Franchise Requirements 📋
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {requirements.map((req, index) => (
-                <Card key={index} className="border-0 bg-white/80 backdrop-blur-sm">
-                  <CardHeader className="pb-4">
-                    <CardTitle className="text-lg text-purple-600">{req.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
-                      {req.items.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-start gap-3 text-sm">
-                          <CheckCircle size={16} className="text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Franchise Process */}
         <section className="py-20">
