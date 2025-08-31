@@ -78,7 +78,7 @@ export function BaristasSection() {
               </h3>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: '#fde15f' }}>
                   <div className="w-12 h-12 rounded-full gradient-coral-teal flex items-center justify-center text-xl">
                     🍵
                   </div>
