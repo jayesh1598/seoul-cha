@@ -27,7 +27,7 @@ export function AboutSection() {
                 </div>
                 
                 {/* Plus Sign */}
-                <div className="text-4xl" style={{ color: 'var(--seoul-pink)' }}>+</div>
+                <div className="text-4xl" style={{ color: '#f59144' }}>+</div>
                 
                 {/* Pearls Icon */}
                 <div className="text-center">
@@ -66,7 +66,7 @@ export function AboutSection() {
           {/* Right Column - Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: 'var(--seoul-pink)', color: 'white' }}>
+              <div className="inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#f59144', color: 'white' }}>
                 What is Bubble Tea? 🤔
               </div>
               
