@@ -11,14 +11,14 @@ export function CustomizeSection() {
   const bases = [
     { id: "milk", name: "Milk Tea", icon: "🥛", color: "var(--seoul-cream)" },
     { id: "fruit", name: "Fruit Tea", icon: "🍓", color: "var(--seoul-pink)" },
-    { id: "yakult", name: "Yakult Tea", icon: "🥤", color: "var(--seoul-sky)" }
+    { id: "yakult", name: "Yakult Tea", icon: "🥤", color: "var(--seoul-turquoise)" }
   ];
 
   const toppings = [
-    { id: "pearls", name: "Tapioca Pearls", icon: "⚫", color: "var(--seoul-lavender)" },
-    { id: "popping", name: "Popping Boba", icon: "🟣", color: "var(--seoul-rose)" },
-    { id: "jelly", name: "Fruit Jelly", icon: "🟢", color: "var(--seoul-mint)" },
-    { id: "pudding", name: "Egg Pudding", icon: "🟡", color: "var(--seoul-peach)" }
+    { id: "pearls", name: "Tapioca Pearls", icon: "⚫", color: "var(--seoul-purple)" },
+    { id: "popping", name: "Popping Boba", icon: "🟣", color: "var(--seoul-coral)" },
+    { id: "jelly", name: "Fruit Jelly", icon: "🟢", color: "var(--seoul-turquoise)" },
+    { id: "pudding", name: "Egg Pudding", icon: "🟡", color: "var(--seoul-yellow)" }
   ];
 
   const toggleTopping = (toppingId: string) => {
@@ -36,18 +36,18 @@ export function CustomizeSection() {
         <div className="absolute top-20 left-20 text-6xl">🎨</div>
         <div className="absolute top-10 right-10 text-4xl">✨</div>
         <div className="absolute bottom-20 left-10 text-5xl">🧋</div>
-        <div className="absolute bottom-10 right-20 text-3xl">🌈</div>
+        <div className="absolute bottom-10 right-20 text-3xl">����</div>
       </div>
 
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-rose)', color: 'white' }}>
+          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-coral)', color: 'white' }}>
             🎨 Create Your Perfect Cup
           </div>
           
           <h2 className="text-3xl md:text-5xl">
-            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-lavender)' }}>
+            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-purple)' }}>
               Customize
             </span>
             <span className="block">Your Own Seoul Cha</span>
@@ -96,7 +96,7 @@ export function CustomizeSection() {
 
           {/* Step 2: Sugar Level */}
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style={{ backgroundColor: 'var(--seoul-mint)', color: 'white' }}>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style={{ backgroundColor: 'var(--seoul-turquoise)', color: 'white' }}>
               <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-green-500">2</span>
               <span>Adjust Sugar Level</span>
             </div>
@@ -144,7 +144,7 @@ export function CustomizeSection() {
 
           {/* Step 3: Select Toppings */}
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style={{ backgroundColor: 'var(--seoul-lavender)', color: 'white' }}>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full" style={{ backgroundColor: 'var(--seoul-purple)', color: 'white' }}>
               <span className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-purple-500">3</span>
               <span>Select Toppings</span>
             </div>
@@ -224,10 +224,10 @@ export function CustomizeSection() {
               
               <Button 
                 className="w-full py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ 
-                  background: 'var(--seoul-lavender)', 
+                style={{
+                  background: 'var(--seoul-purple)',
                   color: 'white',
-                  border: 'none' 
+                  border: 'none'
                 }}
               >
                 🛒 Add Custom Drink to Cart
