@@ -8,6 +8,13 @@ interface FooterProps {
 }
 
 export function Footer({ onPageChange }: FooterProps) {
+    const navItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'menu', label: 'Menu' },
+    { id: 'about', label: 'About Us' },
+    { id: 'franchise', label: 'Franchise' },
+    { id: 'contact', label: 'Contact Us' }
+  ];
   return (
     <footer
       className="relative overflow-hidden"
