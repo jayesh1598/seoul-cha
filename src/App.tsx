@@ -11,6 +11,8 @@ import { MenuPage } from "./components/MenuPage";
 import { AboutUsPage } from "./components/AboutUsPage";
 import { FranchisePage } from "./components/FranchisePage";
 import { ContactUsPage } from "./components/ContactUsPage";
+import { TermsConditionsPage } from "./components/TermsConditionsPage";
+import { PrivacyPolicyPage } from "./components/PrivacyPolicyPage";
 import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
