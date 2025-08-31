@@ -35,7 +35,7 @@ export function ContactUsPage() {
       title: "Call Us",
       details: [
         
-        "Franchise Enquiry: +916357013736"
+        "Franchise Enquiry: +91 635 7013 736"
       ],
       action: {
         label: "Call Now",
@@ -47,8 +47,7 @@ export function ContactUsPage() {
       title: "Email Us",
       details: [
         "Franchise Enquiry: support@seoulcha.com",
-        // "Franchise: franchise@seoulcha.com",
-        // "Press: media@seoulcha.com"
+       
       ],
       action: {
         label: "Send Email",
