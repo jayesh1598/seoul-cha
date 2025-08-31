@@ -15,12 +15,12 @@ export function ContactSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-sky)', color: 'white' }}>
+          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-teal)', color: 'white' }}>
             📍 Visit Us
           </div>
           
           <h2 className="text-3xl md:text-5xl">
-            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-mint)' }}>
+            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-turquoise)' }}>
               Come & Say
             </span>
             <span className="block">Annyeong! 👋</span>
@@ -66,7 +66,7 @@ export function ContactSection() {
                 <div className="flex items-center gap-4">
                   <div 
                     className="w-12 h-12 rounded-xl flex items-center justify-center text-xl"
-                    style={{ backgroundColor: 'var(--seoul-mint)' }}
+                    style={{ backgroundColor: 'var(--seoul-turquoise)' }}
                   >
                     ☎️
                   </div>
@@ -81,7 +81,7 @@ export function ContactSection() {
                 <div className="flex items-center gap-4">
                   <div 
                     className="w-12 h-12 rounded-xl flex items-center justify-center text-xl"
-                    style={{ backgroundColor: 'var(--seoul-lavender)' }}
+                    style={{ backgroundColor: 'var(--seoul-purple)' }}
                   >
                     📧
                   </div>
@@ -107,7 +107,7 @@ export function ContactSection() {
                   <h3 className="text-xl mb-2">Store Location</h3>
                  <a href="https://maps.app.goo.gl/yXjgtHBzWo3ZvVi76" target="blank"> <p className="text-gray-600 mb-4">Click to open in Google Maps</p>
                   <Button 
-                    style={{ backgroundColor: 'var(--seoul-sky)', color: 'white' }}
+                    style={{ backgroundColor: 'var(--seoul-teal)', color: 'white' }}
                     className="rounded-full"
                   >
                     📍 Open in Google Maps
@@ -118,7 +118,7 @@ export function ContactSection() {
                 {/* Floating location pin */}
                 <div 
                   className="absolute top-4 right-4 w-16 h-16 rounded-full flex items-center justify-center shadow-xl"
-                  style={{ backgroundColor: 'var(--seoul-rose)' }}
+                  style={{ backgroundColor: 'var(--seoul-coral)' }}
                 >
                   <span className="text-2xl text-white">📍</span>
                 </div>
@@ -133,7 +133,7 @@ export function ContactSection() {
         <div className="text-center mt-16">
           <div 
             className="inline-block p-8 rounded-3xl shadow-xl text-white"
-            style={{ backgroundColor: 'var(--seoul-rose)' }}
+            style={{ backgroundColor: 'var(--seoul-coral)' }}
           >
             <h3 className="text-2xl mb-4 korean-handwritten">
               Can't wait to visit? 
