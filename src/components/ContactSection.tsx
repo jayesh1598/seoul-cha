@@ -94,9 +94,6 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-          
-
-        
           </div>
 
           {/* Right Column - Map & Additional Info */}
