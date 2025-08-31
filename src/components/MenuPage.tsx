@@ -324,21 +324,6 @@ export function MenuPage() {
           </div>
         ))}
 
-        {/* Toppings Section */}
-        <div className="mt-20 bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8">
-          <h2 className="korean-handwritten text-3xl text-center mb-8 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-            Premium Toppings
-          </h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {toppings.map((topping, index) => (
-              <div key={index} className="bg-white rounded-2xl p-4 text-center hover:shadow-lg transition-shadow duration-300">
-                <h4 className="mb-2">{topping.name}</h4>
-                <p className="korean-handwritten text-pink-600">{topping.price}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* FSSAI License */}
         <div className="mt-16 text-center bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-6">
