@@ -95,7 +95,7 @@ export function ContactUsPage() {
       name: "WhatsApp",
       handle: "Business Chat",
       followers: "Quick replies",
-      url: "https://wa.me/821234567890",
+      url: "https://wa.me/916357013736",
       color: "from-green-500 to-green-600"
     }
   ];
@@ -104,13 +104,13 @@ export function ContactUsPage() {
     {
       name: "Vadodara - Bhayli",
       address: "FOOD CASTLE, Vasna-Bhayli Main Road, Behind Nayara Petrol Pump, Bhayli, Vadodara (Gujarat) 391410",
-      phone: "+91 98765 43210",
+      phone: "+91 635 7013 736",
       status: "Open Now"
     }
   ];
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+821234567890";
+    const phoneNumber = "+916357013736";
     const message = "Hi! I have a question about Seoul Cha. Can you help me?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
