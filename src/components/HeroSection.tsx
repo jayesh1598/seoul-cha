@@ -34,7 +34,7 @@ export function HeroSection() {
                 </span>
                 <br />
                 <span className="block">Authentic Korean</span>
-                <span className="block gradient-pink-mint bg-clip-text text-transparent">
+                <span className="block">
                   Bubble Tea
                 </span>
                 <span className="block korean-handwritten text-3xl md:text-5xl" style={{ color: 'var(--seoul-turquoise)' }}>
