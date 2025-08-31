@@ -94,47 +94,11 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* Hours Card */}
-            <Card className="border-0 shadow-xl">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  🕒 <span>Store Hours</span>
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span>Monday - Thursday</span>
-                    <span className="text-gray-600">10:00 AM - 9:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Friday - Saturday</span>
-                    <span className="text-gray-600">10:00 AM - 11:00 PM</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Sunday</span>
-                    <span className="text-gray-600">11:00 AM - 8:00 PM</span>
-                  </div>
-                  
-                  <div 
-                    className="mt-4 p-3 rounded-xl text-center"
-                    style={{ backgroundColor: 'var(--seoul-mint)', color: 'white' }}
-                  >
-                    <span className="text-sm">🟢 Open Now - Closes at 9:00 PM</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          
 
             {/* Quick Actions */}
             <div className="grid grid-cols-2 gap-4">
-              <Button 
-                className="py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ backgroundColor: 'var(--seoul-pink)', color: 'white', border: 'none' }}
-              >
-                🗺️ Get Directions
-              </Button>
+            
               
               <Button 
                 variant="outline"
