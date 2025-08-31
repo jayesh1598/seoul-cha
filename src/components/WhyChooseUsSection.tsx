@@ -7,14 +7,14 @@ export function WhyChooseUsSection() {
       title: "Authentic Korean Brewing Standards",
       description: "Our baristas follow traditional Korean tea brewing methods passed down through generations, combined with modern bubble tea techniques.",
       gradient: "gradient-pink-mint",
-      color: "var(--seoul-pink)"
+      color: "#f59144"
     },
     {
       icon: "🌟",
       title: "Premium Imported Ingredients",
       description: "We source the finest tea leaves, tapioca pearls, and flavor syrups directly from Korea's most trusted suppliers.",
       gradient: "gradient-lavender-cream",
-      color: "var(--seoul-purple)"
+      color: "#f59144"
     },
     {
       icon: "🎨",
@@ -117,7 +117,7 @@ export function WhyChooseUsSection() {
         <div className="text-center">
           <div className="inline-block p-8 rounded-3xl shadow-2xl" style={{ backgroundColor: '#fde15f' }}>
             <h3 className="text-2xl mb-6">
-              <span className="korean-handwritten" style={{ color: 'var(--seoul-purple)' }}>
+              <span className="korean-handwritten" style={{ color: '#f59144' }}>
                 Awards & Recognition
               </span>
             </h3>
