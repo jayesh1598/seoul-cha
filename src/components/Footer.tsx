@@ -3,11 +3,7 @@ import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
 import seoulChaLogo from "figma:asset/0acdabceb6da815cd678760318edd0e604397810.png";
 
-interface FooterProps {
-  onPageChange?: (page: string) => void;
-}
-
-export function Footer({ onPageChange }: FooterProps) {
+export function Footer() {
   return (
     <footer
       className="relative overflow-hidden"
@@ -73,7 +69,7 @@ export function Footer({ onPageChange }: FooterProps) {
                 Our Menu
               </a>
               <a
-                href="#customize"
+                href="menu"
                 className="block text-white/80 hover:text-white text-sm transition-colors"
               >
                 Customize Your Drink
@@ -156,24 +152,23 @@ export function Footer({ onPageChange }: FooterProps) {
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm">
-            <button
-              onClick={() => onPageChange?.('terms')}
-              className="text-white/80 hover:text-white transition-colors cursor-pointer"
+            <a
+              href="#terms"
+              className="text-white/80 hover:text-white transition-colors"
             >
               Terms & Conditions
-            </button>
-            <button
-              onClick={() => onPageChange?.('privacy')}
-              className="text-white/80 hover:text-white transition-colors cursor-pointer"
+            </a>
+            <a
+              href="#privacy"
+              className="text-white/80 hover:text-white transition-colors"
             >
               Privacy Policy
-            </button>
-
+            </a>
+           
             <a
               href="https://www.instagram.com/seoul_cha_/"
               className="text-white/80 hover:text-white transition-colors"
-              target="_blank"
-            >
+            target="blank">
               Instagram
             </a>
           </div>
