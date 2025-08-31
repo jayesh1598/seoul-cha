@@ -15,7 +15,7 @@ export function Footer({ onPageChange, currentPage }: FooterProps) {
   ];
 
   return (
-    <footer className="relative overflow-hidden" style={{ backgroundColor: "var(--seoul-orange)" }}>
+    <footer className="relative overflow-hidden" style={{ backgroundColor: "rgb(243 149 63)" }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <div className="absolute top-10 left-10 text-8xl text-white">🌸</div>
