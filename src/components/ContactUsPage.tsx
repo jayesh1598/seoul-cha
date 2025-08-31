@@ -46,7 +46,7 @@ export function ContactUsPage() {
       icon: Mail,
       title: "Email Us",
       details: [
-        "Enquiry: support@seoulcha.com",
+        "Franchise Enquiry: support@seoulcha.com",
         // "Franchise: franchise@seoulcha.com",
         // "Press: media@seoulcha.com"
       ],
