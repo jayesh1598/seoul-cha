@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export function StickyActions() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+821234567890"; // Replace with actual Seoul Cha WhatsApp number
+    const phoneNumber = "+916357013736"; // Replace with actual Seoul Cha WhatsApp number
     const message = "Hi! I'm interested in Seoul Cha bubble tea. Can you help me?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
