@@ -26,7 +26,7 @@ export function StickyActions() {
     {
       icon: Facebook,
       label: "Facebook",
-      onClick: () => window.open('https://facebook.com/seoulcha', '_blank'),
+      onClick: () => window.open('https://www.facebook.com/profile.php?id=61572602241104', '_blank'),
       bgColor: "bg-blue-500 hover:bg-blue-600"
     },
     {
