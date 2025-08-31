@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export function ContactSection() {
   return (
-    <section className="py-20 relative" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+    <section className="py-20 relative" style={{ backgroundColor: '#fde15f' }}>
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <div className="absolute top-10 left-10 text-6xl">📍</div>
