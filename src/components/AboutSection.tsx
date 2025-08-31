@@ -38,7 +38,7 @@ export function AboutSection() {
                 </div>
                 
                 {/* Equals Sign */}
-                <div className="text-4xl" style={{ color: 'var(--seoul-mint)' }}>=</div>
+                <div className="text-4xl" style={{ color: 'var(--seoul-turquoise)' }}>=</div>
                 
                 {/* Cup Icon */}
                 <div className="text-center">
@@ -72,7 +72,7 @@ export function AboutSection() {
               
               <h2 className="text-3xl md:text-4xl">
                 Discover the 
-                <span className="korean-handwritten block text-4xl md:text-5xl" style={{ color: 'var(--seoul-lavender)' }}>
+                <span className="korean-handwritten block text-4xl md:text-5xl" style={{ color: 'var(--seoul-purple)' }}>
                   Korean Twist
                 </span>
                 on Bubble Tea
@@ -92,11 +92,11 @@ export function AboutSection() {
               </p>
 
               <div className="grid grid-cols-2 gap-4 py-4">
-                <div className="text-center p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-mint)' }}>
+                <div className="text-center p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-turquoise)' }}>
                   <div className="text-2xl mb-2">🌿</div>
                   <p className="text-sm">Natural Ingredients</p>
                 </div>
-                <div className="text-center p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-peach)' }}>
+                <div className="text-center p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-orange)' }}>
                   <div className="text-2xl mb-2">🇰🇷</div>
                   <p className="text-sm">Korean Authentic</p>
                 </div>
@@ -106,7 +106,7 @@ export function AboutSection() {
             <Button 
               className="px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               style={{ 
-                background: 'var(--seoul-lavender)', 
+                background: 'var(--seoul-purple)', 
                 color: 'white',
                 border: 'none' 
               }}
