@@ -164,12 +164,7 @@ export function Footer() {
             >
               Privacy Policy
             </a>
-            <a
-              href="#media"
-              className="text-white/80 hover:text-white transition-colors"
-            >
-              Media Kit
-            </a>
+           
             <a
               href="https://www.instagram.com/seoul_cha_/"
               className="text-white/80 hover:text-white transition-colors"
