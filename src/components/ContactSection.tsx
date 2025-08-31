@@ -105,13 +105,14 @@ export function ContactSection() {
                 <div className="text-center">
                   <div className="text-6xl mb-4">🗺️</div>
                   <h3 className="text-xl mb-2">Store Location</h3>
-                  <p className="text-gray-600 mb-4"><a href="https://maps.app.goo.gl/yXjgtHBzWo3ZvVi76">Click to open in Google Maps</a></p>
+                 <a href="https://maps.app.goo.gl/yXjgtHBzWo3ZvVi76"> <p className="text-gray-600 mb-4">Click to open in Google Maps</p>
                   <Button 
                     style={{ backgroundColor: 'var(--seoul-sky)', color: 'white' }}
                     className="rounded-full"
                   >
                     📍 Open in Google Maps
-                  </Button>
+                    </Button>
+                  </a>
                 </div>
                 
                 {/* Floating location pin */}
