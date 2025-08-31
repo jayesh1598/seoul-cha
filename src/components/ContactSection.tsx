@@ -96,18 +96,7 @@ export function ContactSection() {
 
           
 
-            {/* Quick Actions */}
-            <div className="grid grid-cols-2 gap-4">
-            
-              
-              <Button 
-                variant="outline"
-                className="py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                style={{ borderColor: 'var(--seoul-lavender)', color: 'var(--seoul-lavender)' }}
-              >
-                📞 Call Now
-              </Button>
-            </div>
+        
           </div>
 
           {/* Right Column - Map & Additional Info */}
