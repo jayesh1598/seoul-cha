@@ -20,7 +20,7 @@ export function StickyActions() {
     {
       icon: Instagram,
       label: "Instagram",
-      onClick: () => window.open('https://instagram.com/seoulcha', '_blank'),
+      onClick: () => window.open('https://www.instagram.com/seoul_cha_/', '_blank'),
       bgColor: "bg-pink-500 hover:bg-pink-600"
     },
     {
