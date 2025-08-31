@@ -7,7 +7,6 @@ interface FooterProps {
 
 export function Footer({ onPageChange, currentPage }: FooterProps) {
   const navItems = [
-    { id: "home", label: "Home" },
     { id: "menu", label: "Menu" },
     { id: "about", label: "About Us" },
     { id: "franchise", label: "Franchise" },
