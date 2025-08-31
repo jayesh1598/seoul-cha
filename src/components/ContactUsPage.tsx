@@ -40,7 +40,7 @@ export function ContactUsPage() {
       // ],
       action: {
         label: "Call Now",
-        onClick: () => window.open('tel:+821234567890', '_blank')
+        onClick: () => window.open('tel:+916357013736', '_blank')
       }
     },
     {
@@ -72,15 +72,15 @@ export function ContactUsPage() {
     {
       icon: Instagram,
       name: "Instagram",
-      handle: "@seoulcha",
-      url: "https://instagram.com/seoulcha",
+      handle: "@seoul_cha_",
+      url: "https://www.instagram.com/seoul_cha_/",
       color: "from-pink-500 to-purple-500"
     },
     {
       icon: Facebook,
       name: "Facebook",
       handle: "Seoul Cha Official",
-      url: "https://facebook.com/seoulcha",
+      url: "https://www.facebook.com/profile.php?id=61572602241104",
       color: "from-blue-500 to-blue-600"
     },
     {
