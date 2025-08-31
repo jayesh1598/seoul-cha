@@ -78,25 +78,6 @@ export function Footer({ onPageChange, currentPage }: FooterProps) {
           {/* Connect With Us */}
           <div className="space-y-4">
             <h4 className="text-white text-lg mb-4">📱 Connect With Us</h4>
-
-            {/* Social Media Icons */}
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="#instagram"
-                aria-label="Instagram"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-              >
-                📷
-              </a>
-              <a
-                href="#facebook"
-                aria-label="Facebook"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-              >
-                📘
-              </a>
-            </div>
-
             <div className="space-y-2 text-sm">
               <p className="text-white/80">📧 support@seoulcha.com</p>
               <p className="text-white/80">🕒 Mon–Thu: 10AM–9PM</p>
