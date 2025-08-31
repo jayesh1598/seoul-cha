@@ -224,30 +224,6 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* Special Events */}
-            <Card className="border-0 shadow-xl">
-              <div className="gradient-lavender-cream p-6 text-center text-white">
-                <h3 className="text-xl mb-2">🎉 Special Events</h3>
-                <p className="text-sm opacity-90">Join us for Korean cultural events!</p>
-              </div>
-              
-              <CardContent className="p-6">
-                <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span>K-Pop Karaoke Nights</span>
-                    <span className="text-sm text-gray-600">Every Friday</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Bubble Tea Making Class</span>
-                    <span className="text-sm text-gray-600">2nd Saturday</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span>Korean Language Exchange</span>
-                    <span className="text-sm text-gray-600">Wednesdays</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 
