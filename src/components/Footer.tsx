@@ -152,23 +152,25 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm">
-            <a
-              href="#terms"
-              className="text-white/80 hover:text-white transition-colors"
+            <button
+              onClick={() => onPageChange?.('terms')}
+              className="text-white/80 hover:text-white transition-colors cursor-pointer"
             >
               Terms & Conditions
-            </a>
-            <a
-              href="#privacy"
-              className="text-white/80 hover:text-white transition-colors"
+            </button>
+            <button
+              onClick={() => onPageChange?.('privacy')}
+              className="text-white/80 hover:text-white transition-colors cursor-pointer"
             >
               Privacy Policy
-            </a>
-           
+            </button>
+
             <a
               href="https://www.instagram.com/seoul_cha_/"
               className="text-white/80 hover:text-white transition-colors"
-            target="blank">
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Instagram
             </a>
           </div>
