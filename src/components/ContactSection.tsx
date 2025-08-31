@@ -104,8 +104,8 @@ export function ContactSection() {
                 {/* Map placeholder - in real implementation, this would be an embedded Google Maps */}
                 <div className="text-center">
                   <div className="text-6xl mb-4">🗺️</div>
-                  <h3 className="text-xl mb-2">Interactive Map</h3>
-                  <p className="text-gray-600 mb-4">Click to open in Google Maps</p>
+                  <h3 className="text-xl mb-2">Store Location</h3>
+                  <p className="text-gray-600 mb-4"><a href="https://maps.app.goo.gl/yXjgtHBzWo3ZvVi76">Click to open in Google Maps</a></p>
                   <Button 
                     style={{ backgroundColor: 'var(--seoul-sky)', color: 'white' }}
                     className="rounded-full"
