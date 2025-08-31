@@ -171,7 +171,7 @@ export function Footer() {
               Media Kit
             </a>
             <a
-              href="#instagram"
+              href="https://www.instagram.com/seoul_cha_/"
               className="text-white/80 hover:text-white transition-colors"
             >
               Instagram
