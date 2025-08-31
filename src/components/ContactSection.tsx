@@ -140,12 +140,13 @@ export function ContactSection() {
             </h3>
             <p className="mb-6">Order online for pickup or delivery!</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://www.zomato.com/vadodara/seoul-cha-bhayli/order" target="blank">
               <Button 
                 className="px-8 py-3 rounded-full bg-white text-black hover:bg-gray-100"
               >
                 🛵 Order for Delivery
               </Button>
-             
+             </a>
             </div>
           </div>
         </div>
