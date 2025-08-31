@@ -66,7 +66,7 @@ export default function App() {
       {renderPage()}
       
       {/* Footer */}
-      <Footer />
+      <Footer onPageChange={setCurrentPage} />
       
       {/* Toast Notifications */}
       <Toaster />
