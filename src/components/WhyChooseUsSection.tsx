@@ -115,7 +115,7 @@ export function WhyChooseUsSection() {
 
         {/* Awards & Recognition Section */}
         <div className="text-center">
-          <div className="inline-block p-8 rounded-3xl shadow-2xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
+          <div className="inline-block p-8 rounded-3xl shadow-2xl" style={{ backgroundColor: '#fde15f' }}>
             <h3 className="text-2xl mb-6">
               <span className="korean-handwritten" style={{ color: 'var(--seoul-purple)' }}>
                 Awards & Recognition
