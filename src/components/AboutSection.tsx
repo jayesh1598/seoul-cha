@@ -72,7 +72,7 @@ export function AboutSection() {
               
               <h2 className="text-3xl md:text-4xl">
                 Discover the 
-                <span className="korean-handwritten block text-4xl md:text-5xl" style={{ color: 'var(--seoul-purple)' }}>
+                <span className="korean-handwritten block text-4xl md:text-5xl" style={{ color: '#f59144' }}>
                   Korean Twist
                 </span>
                 on Bubble Tea
@@ -106,7 +106,7 @@ export function AboutSection() {
             <Button 
               className="px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               style={{ 
-                background: 'var(--seoul-purple)', 
+                background: '#f59144', 
                 color: 'white',
                 border: 'none' 
               }}
