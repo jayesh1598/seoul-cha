@@ -38,7 +38,7 @@ export function StickyActions() {
     {
       icon: Phone,
       label: "Call Us",
-      onClick: () => window.open('tel:+821234567890', '_blank'),
+      onClick: () => window.open('tel:+91 63570 13736', '_blank'),
       bgColor: "bg-purple-500 hover:bg-purple-600"
     }
   ];
