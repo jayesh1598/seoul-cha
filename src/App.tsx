@@ -28,21 +28,25 @@ export default function App() {
         return <FranchisePage />;
       case 'contact':
         return <ContactUsPage />;
+      case 'terms':
+        return <TermsConditionsPage onPageChange={setCurrentPage} />;
+      case 'privacy':
+        return <PrivacyPolicyPage onPageChange={setCurrentPage} />;
       default:
         return (
           <>
             {/* Hero Section */}
             <HeroSection />
-            
+
             {/* About Bubble Tea Section */}
             <AboutSection />
-            
+
             {/* Our Seoul Cha Baristas */}
             <BaristasSection />
-            
+
             {/* Why Choose Seoul Cha */}
             <WhyChooseUsSection />
-            
+
             {/* Contact Section */}
             <ContactSection />
           </>
