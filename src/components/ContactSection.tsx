@@ -87,8 +87,8 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="mb-2">Email</h4>
-                    <p className="text-gray-600">hello@seoulcha.com</p>
-                    <p className="text-gray-600">catering@seoulcha.com</p>
+                    <p className="text-gray-600">support@seoulcha.com</p>
+                  
                   </div>
                 </div>
               </CardContent>
