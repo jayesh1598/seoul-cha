@@ -53,7 +53,7 @@ export function WhyChooseUsSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-orange)', color: 'white' }}>
+          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-orange)', color: 'black' }}>
             🏆 Why Choose Us?
           </div>
           
