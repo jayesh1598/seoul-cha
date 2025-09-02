@@ -117,7 +117,7 @@ export function WhyChooseUsSection() {
         <div className="text-center">
           <div className="inline-block p-8 rounded-3xl shadow-2xl" style={{ backgroundColor: '#fde15f' }}>
             <h3 className="text-2xl mb-6">
-              <span className="korean-handwritten" style={{ color: '#00e2f2' }}>
+              <span className="korean-handwritten" style={{ color: 'black' }}>
                 Awards & Recognition
               </span>
             </h3>
