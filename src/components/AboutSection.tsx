@@ -27,7 +27,7 @@ export function AboutSection() {
                 </div>
                 
                 {/* Plus Sign */}
-                <div className="text-4xl" style={{ color: '#f59144' }}>+</div>
+                <div className="text-4xl" style={{ color: '#00e2f2' }}>+</div>
                 
                 {/* Pearls Icon */}
                 <div className="text-center">
@@ -66,13 +66,13 @@ export function AboutSection() {
           {/* Right Column - Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#f59144', color: 'white' }}>
+              <div className="inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#00e2f2', color: 'white' }}>
                 What is Bubble Tea? 🤔
               </div>
               
               <h2 className="text-3xl md:text-4xl">
                 Discover the 
-                <span className="korean-handwritten block text-4xl md:text-5xl" style={{ color: '#f59144' }}>
+                <span className="korean-handwritten block text-4xl md:text-5xl" style={{ color: '#00e2f2' }}>
                   Korean Twist
                 </span>
                 on Bubble Tea
@@ -106,7 +106,7 @@ export function AboutSection() {
             <Button 
               className="px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               style={{ 
-                background: '#f59144', 
+                background: '#00e2f2', 
                 color: 'white',
                 border: 'none' 
               }}
