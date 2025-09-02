@@ -15,7 +15,7 @@ export function ContactSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-teal)', color: 'white' }}>
+          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-teal)', color: 'black' }}>
             📍 Visit Us
           </div>
           
