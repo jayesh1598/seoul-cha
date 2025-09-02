@@ -132,7 +132,7 @@ export function ContactSection() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div 
-            className="inline-block p-8 rounded-3xl shadow-xl text-white"
+            className="inline-block p-8 rounded-3xl shadow-xl text-black"
             style={{ backgroundColor: 'var(--seoul-coral)' }}
           >
             <h3 className="text-2xl mb-4 korean-handwritten">
