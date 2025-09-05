@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { toast } from "sonner@2.0.3";
 import { Send, User, Mail, Phone, MessageSquare } from "lucide-react";
+import { useRef } from "react";
 
 interface EnquiryFormProps {
   type?: 'general' | 'franchise';
@@ -14,6 +15,8 @@ interface EnquiryFormProps {
 }
 
 export function EnquiryForm({ type = 'general', title = "Get in Touch" }: EnquiryFormProps) {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const formName = type === 'franchise' ? 'seoulcha-franchise-enquiry' : 'seoulcha-general-enquiry';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,27 +36,62 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    const webhook = (import.meta as any).env?.VITE_ZAPIER_WEBHOOK_URL as string | undefined;
 
-    // Show success message
-    toast.success(
-      type === 'franchise' 
-        ? "Franchise enquiry submitted! We'll contact you within 24 hours."
-        : "Message sent successfully! We'll get back to you soon."
-    );
+    try {
+      if (webhook) {
+        const res = await fetch(webhook, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...formData,
+            form: formName,
+            to: 'support@seoulcha.com',
+            receivedAt: new Date().toISOString(),
+          }),
+        });
+        if (!res.ok) throw new Error('Webhook failed');
+      } else {
+        const encode = (data: Record<string, string>) =>
+          Object.keys(data)
+            .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+            .join('&');
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-      enquiryType: type === 'franchise' ? 'franchise' : 'general'
-    });
+        await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': formName,
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            subject: formData.subject,
+            message: formData.message,
+            enquiryType: formData.enquiryType,
+            to: 'support@seoulcha.com',
+          }),
+        });
+      }
 
-    setIsSubmitting(false);
+      toast.success(
+        type === 'franchise'
+          ? "Franchise enquiry submitted! We'll contact you within 24 hours."
+          : "Message sent successfully! We'll get back to you soon."
+      );
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        enquiryType: type === 'franchise' ? 'franchise' : 'general',
+      });
+    } catch (err) {
+      toast.error('Submission failed. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -71,7 +109,23 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
       </CardHeader>
       
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form
+          ref={formRef}
+          name={formName}
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+          className="space-y-6"
+        >
+          <input type="hidden" name="form-name" value={formName} />
+          <input type="hidden" name="enquiryType" value={formData.enquiryType} />
+          <input type="hidden" name="to" value="support@seoulcha.com" />
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
           {/* Name Field */}
           <div className="space-y-2">
             <Label htmlFor="name" className="flex items-center gap-2">
@@ -80,6 +134,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Input
               id="name"
+              name="name"
               type="text"
               value={formData.name}
               onChange={(e) => handleInputChange('name', e.target.value)}
@@ -97,6 +152,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Input
               id="email"
+              name="email"
               type="email"
               value={formData.email}
               onChange={(e) => handleInputChange('email', e.target.value)}
@@ -114,6 +170,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Input
               id="phone"
+              name="phone"
               type="tel"
               value={formData.phone}
               onChange={(e) => handleInputChange('phone', e.target.value)}
@@ -139,6 +196,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
+              <input type="hidden" name="subject" value={formData.subject} />
             </div>
           )}
 
@@ -148,6 +206,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
               <Label htmlFor="location">Preferred Location</Label>
               <Input
                 id="location"
+                name="subject"
                 type="text"
                 value={formData.subject}
                 onChange={(e) => handleInputChange('subject', e.target.value)}
@@ -165,6 +224,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Textarea
               id="message"
+              name="message"
               value={formData.message}
               onChange={(e) => handleInputChange('message', e.target.value)}
               placeholder={
