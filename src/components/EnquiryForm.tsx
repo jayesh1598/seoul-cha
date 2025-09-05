@@ -8,6 +8,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { toast } from "sonner@2.0.3";
 import { Send, User, Mail, Phone, MessageSquare } from "lucide-react";
 import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { sendEnquiry } from "../store/enquirySlice";
+import type { RootState } from "../store";
 
 interface EnquiryFormProps {
   type?: 'general' | 'franchise';
@@ -26,6 +29,8 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
     enquiryType: type === 'franchise' ? 'franchise' : 'general'
   });
 
+  const dispatch = useDispatch();
+  const sending = useSelector((s: RootState) => s.enquiry.sending);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
@@ -36,41 +41,16 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
     e.preventDefault();
     setIsSubmitting(true);
 
-    const webhook = (import.meta as any).env?.VITE_ZAPIER_WEBHOOK_URL as string | undefined;
-
     try {
-      if (webhook) {
-        const res = await fetch(webhook, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            ...formData,
-            form: formName,
-            to: 'support@seoulcha.com',
-            receivedAt: new Date().toISOString(),
-          }),
-        });
-        if (!res.ok) throw new Error('Webhook failed');
-      } else {
-        const encode = (data: Record<string, string>) =>
-          Object.keys(data)
-            .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-            .join('&');
+      const action = await dispatch(
+        // @ts-ignore
+        sendEnquiry({
+          ...formData,
+        })
+      );
 
-        await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encode({
-            'form-name': formName,
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            subject: formData.subject,
-            message: formData.message,
-            enquiryType: formData.enquiryType,
-            to: 'support@seoulcha.com',
-          }),
-        });
+      if ((action as any).error) {
+        throw new Error((action as any).error?.message || 'Failed');
       }
 
       toast.success(
@@ -88,7 +68,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
         enquiryType: type === 'franchise' ? 'franchise' : 'general',
       });
     } catch (err) {
-      toast.error('Submission failed. Please try again.');
+      toast.error('Submission failed. Please set VITE_ENQUIRY_WEBHOOK_URL or share a provider.');
     } finally {
       setIsSubmitting(false);
     }
@@ -111,21 +91,9 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
       <CardContent>
         <form
           ref={formRef}
-          name={formName}
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="space-y-6"
         >
-          <input type="hidden" name="form-name" value={formName} />
-          <input type="hidden" name="enquiryType" value={formData.enquiryType} />
-          <input type="hidden" name="to" value="support@seoulcha.com" />
-          <p className="hidden">
-            <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
-            </label>
-          </p>
           {/* Name Field */}
           <div className="space-y-2">
             <Label htmlFor="name" className="flex items-center gap-2">
@@ -241,10 +209,10 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
           {/* Submit Button */}
           <Button
             type="submit"
-            disabled={isSubmitting}
+            disabled={isSubmitting || sending}
             className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
           >
-            {isSubmitting ? (
+            {isSubmitting || sending ? (
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                 Sending...
