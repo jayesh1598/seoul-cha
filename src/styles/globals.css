@@ -246,4 +246,8 @@ html {
   .korean-handwritten {
     font-family: 'Caveat', cursive;
   }
+
+  .bubble-text {
+    font-family: 'Bubblegum Sans', cursive;
+  }
 }
