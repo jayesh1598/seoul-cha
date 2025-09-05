@@ -257,11 +257,11 @@ html {
   }
 
   .text-gradient-logo {
-    background: linear-gradient(90deg, var(--seoul-turquoise), var(--seoul-yellow));
+    background: linear-gradient(90deg, #5f2e01, #000000);
   }
 
   .dark .text-gradient-logo {
-    background: linear-gradient(90deg, var(--seoul-yellow), var(--seoul-turquoise));
+    background: linear-gradient(90deg, #5f2e01, #000000);
   }
 
   .dark .bubble-outline {
