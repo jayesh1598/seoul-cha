@@ -250,4 +250,27 @@ html {
   .bubble-text {
     font-family: 'Bubblegum Sans', cursive;
   }
+
+  .bubble-outline {
+    -webkit-text-stroke: 1.5px rgb(0 226 242 / 40%);
+    text-shadow: 0 1px 0 rgb(0 0 0), 0 2px 2px rgba(0, 0, 0, 0.08), 0 6px 12px rgb(254 254 254);
+  }
+
+  .text-gradient-logo {
+    background: linear-gradient(90deg, #5f2e01, #000000);
+  }
+
+  .dark .text-gradient-logo {
+    background: linear-gradient(90deg, #5f2e01, #000000);
+  }
+
+  .dark .bubble-outline {
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.65);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  span.bubble-text.bubble-outline.text-2xl.text-gradient-logo.bg-clip-text.text-transparent.leading-none.font-bold {
+    color: #00e2f2;
+    -webkit-text-fill-color: #00e2f2;
+  }
 }

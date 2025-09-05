@@ -41,7 +41,7 @@ export function Navigation({ currentPage, onPageChange }: NavigationProps) {
             
             {/* Brand Text */}
             <div className="flex flex-col">
-              <span className="bubble-text text-2xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent leading-none font-bold">
+              <span className="bubble-text bubble-outline text-2xl text-gradient-logo bg-clip-text text-transparent leading-none font-bold">
                 Seoul Cha
               </span>
               <span className="text-xs text-gray-500 leading-none tracking-wide">Korean Bubble Tea</span>

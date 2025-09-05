@@ -7,6 +7,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { toast } from "sonner@2.0.3";
 import { Send, User, Mail, Phone, MessageSquare } from "lucide-react";
+import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { sendEnquiry } from "../store/enquirySlice";
+import type { RootState } from "../store";
 
 interface EnquiryFormProps {
   type?: 'general' | 'franchise';
@@ -14,6 +18,8 @@ interface EnquiryFormProps {
 }
 
 export function EnquiryForm({ type = 'general', title = "Get in Touch" }: EnquiryFormProps) {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const formName = type === 'franchise' ? 'seoulcha-franchise-enquiry' : 'seoulcha-general-enquiry';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,6 +29,8 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
     enquiryType: type === 'franchise' ? 'franchise' : 'general'
   });
 
+  const dispatch = useDispatch();
+  const sending = useSelector((s: RootState) => s.enquiry.sending);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
@@ -33,27 +41,37 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const action = await dispatch(
+        // @ts-ignore
+        sendEnquiry({
+          ...formData,
+        })
+      );
 
-    // Show success message
-    toast.success(
-      type === 'franchise' 
-        ? "Franchise enquiry submitted! We'll contact you within 24 hours."
-        : "Message sent successfully! We'll get back to you soon."
-    );
+      if ((action as any).error) {
+        throw new Error((action as any).error?.message || 'Failed');
+      }
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-      enquiryType: type === 'franchise' ? 'franchise' : 'general'
-    });
+      toast.success(
+        type === 'franchise'
+          ? "Franchise enquiry submitted! We'll contact you within 24 hours."
+          : "Message sent successfully! We'll get back to you soon."
+      );
 
-    setIsSubmitting(false);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        enquiryType: type === 'franchise' ? 'franchise' : 'general',
+      });
+    } catch (err) {
+      toast.error('Submission failed. Please set VITE_ENQUIRY_WEBHOOK_URL or share a provider.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -71,7 +89,11 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
       </CardHeader>
       
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="space-y-6"
+        >
           {/* Name Field */}
           <div className="space-y-2">
             <Label htmlFor="name" className="flex items-center gap-2">
@@ -80,6 +102,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Input
               id="name"
+              name="name"
               type="text"
               value={formData.name}
               onChange={(e) => handleInputChange('name', e.target.value)}
@@ -97,6 +120,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Input
               id="email"
+              name="email"
               type="email"
               value={formData.email}
               onChange={(e) => handleInputChange('email', e.target.value)}
@@ -114,6 +138,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Input
               id="phone"
+              name="phone"
               type="tel"
               value={formData.phone}
               onChange={(e) => handleInputChange('phone', e.target.value)}
@@ -139,6 +164,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
                   <SelectItem value="other">Other</SelectItem>
                 </SelectContent>
               </Select>
+              <input type="hidden" name="subject" value={formData.subject} />
             </div>
           )}
 
@@ -148,6 +174,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
               <Label htmlFor="location">Preferred Location</Label>
               <Input
                 id="location"
+                name="subject"
                 type="text"
                 value={formData.subject}
                 onChange={(e) => handleInputChange('subject', e.target.value)}
@@ -165,6 +192,7 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
             </Label>
             <Textarea
               id="message"
+              name="message"
               value={formData.message}
               onChange={(e) => handleInputChange('message', e.target.value)}
               placeholder={
@@ -181,10 +209,10 @@ export function EnquiryForm({ type = 'general', title = "Get in Touch" }: Enquir
           {/* Submit Button */}
           <Button
             type="submit"
-            disabled={isSubmitting}
+            disabled={isSubmitting || sending}
             className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white py-3 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
           >
-            {isSubmitting ? (
+            {isSubmitting || sending ? (
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                 Sending...
