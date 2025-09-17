@@ -15,7 +15,7 @@ export function Footer({ onPageChange, currentPage }: FooterProps) {
   ];
 
   return (
-    <footer className="relative overflow-hidden" style={{ backgroundColor: "rgb(253 225 95)" }}>
+    <footer className="relative overflow-hidden" style={{ backgroundColor: 'var(--seoul-cream)' }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
         <div className="absolute top-10 left-10 text-8xl text-black">🌸</div>
@@ -64,7 +64,7 @@ export function Footer({ onPageChange, currentPage }: FooterProps) {
                             ? "bg-black shadow-sm"
                             : "text-black/90 hover:text-black hover:bg-black/10"
                         }`}
-                        style={isActive ? { color: 'var(--seoul-orange)' } : {}}
+                        style={isActive ? { color: 'var(--seoul-peach)' } : {}}
                         aria-current={isActive ? "page" : undefined}
                       >
                         {item.label}
