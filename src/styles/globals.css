@@ -41,14 +41,14 @@
   --sidebar-ring: oklch(0.708 0 0);
   
   /* Seoul Cha Custom Colors - Logo Color Palette */
-  --seoul-pink: #ffb3e6;
-  --seoul-mint: #b3ffe6;
-  --seoul-lavender: #e6b3ff;
-  --seoul-cream: #fff2e6;
-  --seoul-peach: #ffccb3;
-  --seoul-sky: #b3e6ff;
-  --seoul-rose: #91d1d1;
-  --seoul-sage: #ccffb3;
+  --seoul-pink: #fce15c;
+  --seoul-mint: #67bebd;
+  --seoul-lavender: #67bebd;
+  --seoul-cream: #fce15c;
+  --seoul-peach: #fce15c;
+  --seoul-sky: #67bebd;
+  --seoul-rose: #67bebd;
+  --seoul-sage: #67bebd;
 }
 
 .dark {
