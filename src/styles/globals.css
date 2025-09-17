@@ -263,11 +263,11 @@ html {
   }
 
   .text-gradient-logo {
-    background: linear-gradient(90deg, #fae25c, #fae25c) !important;
+    background: none;
   }
 
   .dark .text-gradient-logo {
-    background: linear-gradient(90deg, #fae25c, #fae25c) !important;
+    background: none;
   }
 
   .dark .bubble-outline {
