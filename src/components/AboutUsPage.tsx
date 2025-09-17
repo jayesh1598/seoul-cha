@@ -156,37 +156,6 @@ export function AboutUsPage() {
           </div>
         </section>
 
-        {/* Our Journey Timeline */}
-        <section className="py-20">
-          <h2 className="korean-handwritten text-3xl text-center text-pink-600 mb-12">
-            Our Journey Through Time 🌟
-          </h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-pink-300 to-purple-300 rounded-full"></div>
-              
-              {timeline.map((event, index) => (
-                <div key={index} className={`relative flex items-center mb-12 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                  {/* Timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                  
-                  {/* Content */}
-                  <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <Card className="border-0 bg-white/80 backdrop-blur-sm shadow-lg">
-                      <CardContent className="p-6">
-                        <div className="korean-handwritten text-2xl text-purple-600 mb-2">{event.year}</div>
-                        <h3 className="mb-3">{event.title}</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">{event.description}</p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
 
         {/* Seoul Connection */}

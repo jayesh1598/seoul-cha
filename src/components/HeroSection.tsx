@@ -29,7 +29,7 @@ export function HeroSection() {
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl leading-tight">
-                <span className="korean-handwritten text-5xl md:text-7xl" style={{ color: '#00e2f2' }}>
+                <span className="korean-handwritten text-5xl md:text-7xl" style={{ color: '#ff8a80' }}>
                   Enjoy
                 </span>
                 <br />
@@ -52,7 +52,7 @@ export function HeroSection() {
               <Button 
                 className="px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 style={{ 
-                  background: '#00e2f2', 
+                  background: '#ff8a80', 
                   color: 'white',
                   border: 'none' 
                 }}

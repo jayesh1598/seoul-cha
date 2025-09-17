@@ -47,7 +47,7 @@ export function BaristasSection() {
             </div>
             
             {/* Floating Certification Badge */}
-            <div className="absolute -top-6 -right-6 p-6 rounded-3xl shadow-xl" style={{ backgroundColor: '#00e2f2' }}>
+            <div className="absolute -top-6 -right-6 p-6 rounded-3xl shadow-xl" style={{ backgroundColor: '#ff8a80' }}>
               <div className="text-center text-white">
                 <div className="text-3xl mb-2">🏆</div>
                 <p className="text-sm">Seoul Certified</p>
@@ -130,8 +130,8 @@ export function BaristasSection() {
             </div>
 
             {/* Korean Text with Translation */}
-            <div className="p-6 rounded-xl border-l-4" style={{ backgroundColor: '#fde15f', borderColor: '#00e2f2' }}>
-              <p className="korean-handwritten text-xl mb-2" style={{ color: '#00e2f2' }}>
+            <div className="p-6 rounded-xl border-l-4" style={{ backgroundColor: '#fde15f', borderColor: '#ff8a80' }}>
+              <p className="korean-handwritten text-xl mb-2" style={{ color: '#ff8a80' }}>
                 "정성을 다해 만든 차 한 잔"
               </p>
               <p className="text-sm text-gray-600 italic">

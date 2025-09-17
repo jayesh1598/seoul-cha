@@ -276,7 +276,7 @@ html {
   }
 
   span.bubble-text.bubble-outline.text-2xl.text-gradient-logo.bg-clip-text.text-transparent.leading-none.font-bold {
-    color: #00e2f2;
-    -webkit-text-fill-color: #00e2f2;
+    color: #ff8a80;
+    -webkit-text-fill-color: #ff8a80;
   }
 }
