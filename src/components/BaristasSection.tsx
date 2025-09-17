@@ -7,7 +7,7 @@ export function BaristasSection() {
     <section className="py-20 relative overflow-hidden">
       {/* Background with Seoul skyline pattern */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-0 w-full h-32 opacity-10" style={{ backgroundColor: 'var(--seoul-teal)' }}></div>
+        <div className="absolute top-0 left-0 w-full h-32 opacity-10" style={{ backgroundColor: 'var(--seoul-mint)' }}></div>
         <div className="absolute top-10 left-10 text-8xl opacity-5">🏙️</div>
         <div className="absolute top-20 right-20 text-6xl opacity-5">🌸</div>
         <div className="absolute bottom-10 left-20 text-7xl opacity-5">🇰🇷</div>
@@ -17,13 +17,13 @@ export function BaristasSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-turquoise)', color: 'black' }}>
+          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-mint)', color: 'black' }}>
             👩‍🍳 Meet Our Team
           </div>
           
           <h2 className="text-3xl md:text-5xl">
             <span className="block">Our Seoul Cha</span>
-            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-coral)' }}>
+            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-rose)' }}>
               Tea Masters
             </span>
           </h2>
@@ -47,7 +47,7 @@ export function BaristasSection() {
             </div>
             
             {/* Floating Certification Badge */}
-            <div className="absolute -top-6 -right-6 p-6 rounded-3xl shadow-xl" style={{ backgroundColor: '#ff8a80' }}>
+            <div className="absolute -top-6 -right-6 p-6 rounded-3xl shadow-xl" style={{ backgroundColor: 'var(--seoul-rose)' }}>
               <div className="text-center text-white">
                 <div className="text-3xl mb-2">🏆</div>
                 <p className="text-sm">Seoul Certified</p>
@@ -72,13 +72,13 @@ export function BaristasSection() {
             <div className="space-y-6">
               <h3 className="text-2xl">
                 Authentic Korean 
-                <span className="korean-handwritten text-3xl block" style={{ color: 'var(--seoul-turquoise)' }}>
+                <span className="korean-handwritten text-3xl block" style={{ color: 'var(--seoul-mint)' }}>
                   Training & Culture
                 </span>
               </h3>
               
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: '#fde15f' }}>
+                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
                   <div className="w-12 h-12 rounded-full gradient-coral-teal flex items-center justify-center text-xl">
                     🍵
                   </div>
@@ -88,7 +88,7 @@ export function BaristasSection() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: '#fde15f' }}>
+                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
                   <div className="w-12 h-12 rounded-full gradient-purple-cream flex items-center justify-center text-xl">
                     🧋
                   </div>
@@ -98,7 +98,7 @@ export function BaristasSection() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: '#fde15f' }}>
+                <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
                   <div className="w-12 h-12 rounded-full gradient-yellow-turquoise flex items-center justify-center text-xl">
                     🇰🇷
                   </div>
@@ -122,7 +122,7 @@ export function BaristasSection() {
               
               <Card className="border-0 shadow-lg">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl mb-2" style={{ color: 'var(--seoul-turquoise)' }}>100%</div>
+                  <div className="text-3xl mb-2" style={{ color: 'var(--seoul-mint)' }}>100%</div>
                   <p className="text-sm">Authentic</p>
                   <p className="text-xs text-gray-500">Korean Methods</p>
                 </CardContent>
@@ -130,8 +130,8 @@ export function BaristasSection() {
             </div>
 
             {/* Korean Text with Translation */}
-            <div className="p-6 rounded-xl border-l-4" style={{ backgroundColor: '#fde15f', borderColor: '#ff8a80' }}>
-              <p className="korean-handwritten text-xl mb-2" style={{ color: '#ff8a80' }}>
+            <div className="p-6 rounded-xl border-l-4" style={{ backgroundColor: 'var(--seoul-cream)', borderColor: 'var(--seoul-rose)' }}>
+              <p className="korean-handwritten text-xl mb-2" style={{ color: 'var(--seoul-rose)' }}>
                 "정성을 다해 만든 차 한 잔"
               </p>
               <p className="text-sm text-gray-600 italic">

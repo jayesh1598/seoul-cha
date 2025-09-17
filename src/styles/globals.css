@@ -41,14 +41,14 @@
   --sidebar-ring: oklch(0.708 0 0);
   
   /* Seoul Cha Custom Colors - Logo Color Palette */
-  --seoul-yellow: #FFE55C;
-  --seoul-turquoise: #5BC0B0;
-  --seoul-orange: #FF9A56;
-  --seoul-pink: #FFB6C1;
-  --seoul-purple: #5D4E75;
-  --seoul-cream: #FFF8E1;
-  --seoul-coral: #FF8A80;
-  --seoul-teal: #4ECDC4;
+  --seoul-pink: #fce15c;
+  --seoul-mint: #67bebd;
+  --seoul-lavender: #67bebd;
+  --seoul-cream: #fce15c;
+  --seoul-peach: #fce15c;
+  --seoul-sky: #67bebd;
+  --seoul-rose: #67bebd;
+  --seoul-sage: #67bebd;
 }
 
 .dark {
@@ -201,36 +201,36 @@ html {
 /* Seoul Cha Custom Utilities */
 @layer utilities {
   .gradient-yellow-turquoise {
-    background: linear-gradient(135deg, var(--seoul-yellow), #f7923e);
+    background: linear-gradient(135deg, var(--seoul-peach), var(--seoul-mint));
   }
 
   .gradient-orange-pink {
-    background: linear-gradient(135deg, #f8e25c, #f7923e);
+    background: linear-gradient(135deg, var(--seoul-peach), var(--seoul-rose));
   }
 
   .gradient-purple-cream {
-    background: linear-gradient(135deg, var(--seoul-purple), var(--seoul-cream));
+    background: linear-gradient(135deg, var(--seoul-lavender), var(--seoul-cream));
   }
 
   .gradient-coral-teal {
-    background: linear-gradient(135deg, #f8e25c, #f7923e);
+    background: linear-gradient(135deg, var(--seoul-rose), var(--seoul-mint));
   }
 
   /* Legacy gradient classes mapped to new colors */
   .gradient-pink-mint {
-    background: linear-gradient(135deg, #fae25c, #df814b);
+    background: linear-gradient(135deg, var(--seoul-pink), var(--seoul-mint));
   }
 
   .gradient-lavender-cream {
-    background: linear-gradient(135deg, #f8e25c, #f7923e);
+    background: linear-gradient(135deg, var(--seoul-lavender), var(--seoul-cream));
   }
 
   .gradient-peach-sky {
-    background: linear-gradient(135deg, #f8e25c, #f7923e);
+    background: linear-gradient(135deg, var(--seoul-peach), var(--seoul-sky));
   }
 
   .gradient-rose-sage {
-    background: linear-gradient(135deg, #f8e25c, #f7923e);
+    background: linear-gradient(135deg, var(--seoul-rose), var(--seoul-sage));
   }
   
   .floating-shape {
@@ -263,11 +263,11 @@ html {
   }
 
   .text-gradient-logo {
-    background: linear-gradient(90deg, #5f2e01, #000000);
+    background: none;
   }
 
   .dark .text-gradient-logo {
-    background: linear-gradient(90deg, #5f2e01, #000000);
+    background: none;
   }
 
   .dark .bubble-outline {
@@ -276,7 +276,7 @@ html {
   }
 
   span.bubble-text.bubble-outline.text-2xl.text-gradient-logo.bg-clip-text.text-transparent.leading-none.font-bold {
-    color: #ff8a80;
-    -webkit-text-fill-color: #ff8a80;
+    color: #fae25c !important;
+    -webkit-text-fill-color: #fae25c !important;
   }
 }
