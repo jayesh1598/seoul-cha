@@ -7,28 +7,28 @@ export function WhyChooseUsSection() {
       title: "Authentic Korean Brewing Standards",
       description: "Our baristas follow traditional Korean tea brewing methods passed down through generations, combined with modern bubble tea techniques.",
       gradient: "gradient-pink-mint",
-      color: "#ff8a80"
+      color: "var(--seoul-rose)"
     },
     {
       icon: "🌟",
       title: "Premium Imported Ingredients",
       description: "We source the finest tea leaves, tapioca pearls, and flavor syrups directly from Korea's most trusted suppliers.",
       gradient: "gradient-lavender-cream",
-      color: "#ff8a80"
+      color: "var(--seoul-rose)"
     },
     {
       icon: "🎨",
       title: "Creative & Trendy Flavors",
       description: "Innovative combinations inspired by Korean pop culture, seasonal ingredients, and customer favorites from Seoul's trendiest cafes.",
       gradient: "gradient-peach-sky",
-      color: "var(--seoul-orange)"
+      color: "var(--seoul-peach)"
     },
     {
       icon: "🌱",
       title: "Vegan & Keto-Friendly Options",
       description: "Plant-based milk alternatives, sugar-free syrups, and keto-approved toppings so everyone can enjoy Seoul Cha.",
       gradient: "gradient-rose-sage",
-      color: "var(--seoul-turquoise)"
+      color: "var(--seoul-mint)"
     }
   ];
 
@@ -53,12 +53,12 @@ export function WhyChooseUsSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center space-y-6 mb-16">
-          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-orange)', color: 'black' }}>
+          <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: 'var(--seoul-peach)', color: 'black' }}>
             🏆 Why Choose Us?
           </div>
           
           <h2 className="text-3xl md:text-5xl">
-            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-coral)' }}>
+            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-rose)' }}>
               Why Seoul Cha
             </span>
             <span className="block">Stands Out</span>
@@ -115,7 +115,7 @@ export function WhyChooseUsSection() {
 
         {/* Awards & Recognition Section */}
         <div className="text-center">
-          <div className="inline-block p-8 rounded-3xl shadow-2xl" style={{ backgroundColor: '#fde15f' }}>
+          <div className="inline-block p-8 rounded-3xl shadow-2xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
             <h3 className="text-2xl mb-6">
               <span className="korean-handwritten" style={{ color: 'black' }}>
                 Awards & Recognition

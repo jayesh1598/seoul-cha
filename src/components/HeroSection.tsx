@@ -29,7 +29,7 @@ export function HeroSection() {
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl leading-tight">
-                <span className="korean-handwritten text-5xl md:text-7xl" style={{ color: '#ff8a80' }}>
+                <span className="korean-handwritten text-5xl md:text-7xl" style={{ color: 'var(--seoul-rose)' }}>
                   Enjoy
                 </span>
                 <br />
@@ -37,7 +37,7 @@ export function HeroSection() {
                 <span className="block">
                   Bubble Tea
                 </span>
-                <span className="block korean-handwritten text-3xl md:text-5xl" style={{ color: 'var(--seoul-turquoise)' }}>
+                <span className="block korean-handwritten text-3xl md:text-5xl" style={{ color: 'var(--seoul-mint)' }}>
                   Fresh from Seoul
                 </span>
               </h1>
@@ -52,7 +52,7 @@ export function HeroSection() {
               <Button 
                 className="px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 style={{ 
-                  background: '#ff8a80', 
+                  background: 'var(--seoul-rose)', 
                   color: 'white',
                   border: 'none' 
                 }}
@@ -91,7 +91,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 
-                <div className="korean-handwritten text-center p-4 rounded-2xl" style={{ backgroundColor: '#fde15f' }}>
+                <div className="korean-handwritten text-center p-4 rounded-2xl" style={{ backgroundColor: 'var(--seoul-cream)' }}>
                   <span className="text-2xl" style={{ color: 'var(--seoul-purple)' }}>
                     #SeoulChaVibes
                   </span>
