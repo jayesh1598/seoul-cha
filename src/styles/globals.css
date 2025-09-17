@@ -263,11 +263,11 @@ html {
   }
 
   .text-gradient-logo {
-    background: linear-gradient(90deg, #5f2e01, #000000);
+    background: linear-gradient(90deg, #fae25c, #fae25c) !important;
   }
 
   .dark .text-gradient-logo {
-    background: linear-gradient(90deg, #5f2e01, #000000);
+    background: linear-gradient(90deg, #fae25c, #fae25c) !important;
   }
 
   .dark .bubble-outline {
@@ -276,7 +276,7 @@ html {
   }
 
   span.bubble-text.bubble-outline.text-2xl.text-gradient-logo.bg-clip-text.text-transparent.leading-none.font-bold {
-    color: var(--seoul-rose);
-    -webkit-text-fill-color: var(--seoul-rose);
+    color: #fae25c !important;
+    -webkit-text-fill-color: #fae25c !important;
   }
 }
