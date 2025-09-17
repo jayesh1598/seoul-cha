@@ -7,14 +7,14 @@ export function WhyChooseUsSection() {
       title: "Authentic Korean Brewing Standards",
       description: "Our baristas follow traditional Korean tea brewing methods passed down through generations, combined with modern bubble tea techniques.",
       gradient: "gradient-pink-mint",
-      color: "#00e2f2"
+      color: "#ff8a80"
     },
     {
       icon: "🌟",
       title: "Premium Imported Ingredients",
       description: "We source the finest tea leaves, tapioca pearls, and flavor syrups directly from Korea's most trusted suppliers.",
       gradient: "gradient-lavender-cream",
-      color: "#00e2f2"
+      color: "#ff8a80"
     },
     {
       icon: "🎨",

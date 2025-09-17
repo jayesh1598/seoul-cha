@@ -20,7 +20,7 @@ export function ContactSection() {
           </div>
           
           <h2 className="text-3xl md:text-5xl">
-            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: 'var(--seoul-turquoise)' }}>
+            <span className="korean-handwritten text-4xl md:text-6xl" style={{ color: '#ff8a80' }}>
               Come & Say
             </span>
             <span className="block">Annyeong! 👋</span>
